@@ -1,0 +1,192 @@
+@import url('variables.css');
+
+/* Pozadí sekce fotek */
+.gallery-section {
+  background: var(--bg-intro);
+  max-width: 1250px;
+  padding: 50px 20px;
+  margin: 20px auto;
+  color: var(--text);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+  
+/* Mřížka pro zarovnání obrázků ve 3 sloupcích */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sloupce stejné šířky */
+  gap: 15px; /* Mezery mezi obrázky */
+  max-width: 1200px;
+  margin: 15px auto; /* Vycentrování celé galerie */
+}
+  
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer; /* Ukazatel na kliknutí */
+  border-radius: 10px; /* Lehce zakulacené rohy obrázků */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 5px auto;
+}
+  
+.gallery img:hover {
+  transform: scale(1.05); /* Zvýraznění při najetí myší */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+  
+/* Modal (fullscreen náhled obrázku) */
+.modal {
+  display: none; /* Skryté ve výchozím stavu */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Černé poloprůhledné pozadí */
+}
+  
+.modal-content {
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(93, 0, 0, 0.5);
+}
+
+.modal-caption {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+  
+.modal-content:focus {
+  outline: none;
+}
+  
+/* Zavírací křížek */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+  
+.modal .close:hover {
+  color: #bbb;
+}
+
+button.prev {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+button.next {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: var(--accent-menu);
+  color: var(--menu-color);
+}
+
+/* ===== HERO SECTION (PARALLAX) ===== */
+.gallery-hero {
+  position: relative;
+  height: 75vh;
+  background-image: url('./../images/gallery.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: 1;
+}
+
+.gallery-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  color: var(--text);
+}
+
+.gallery-hero h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-hero p {
+  color: aliceblue;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 60vh;
+    background-attachment: scroll; /* Problémové na mobilech */
+    background-position-y: 0%;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-hero p {
+    font-size: 1rem;
+  }
+
+  button.prev {
+  padding: 70px 15px;
+  top: 75%;
+  }
+
+  button.next {
+  padding: 70px 15px;
+  top: 75%;
+  }
+
+  .gallery {
+  display: block;
+  }
+}

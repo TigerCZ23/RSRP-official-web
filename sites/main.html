@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
   <title>RS:RP Ronograd State</title>
 </head>
 <body>
@@ -14,6 +15,20 @@
         <b>
             <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
         </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a style="text-decoration: underline;" href="main.html">Úvod</a></li>
+          <li><a href="about.html">O nás & Kontakt</a></li>
+          <li><a href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="a-team.html">Tým</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
     </div>
 
     <label class="theme-switch">
@@ -32,14 +47,14 @@
     <div class="hero-content">
       <h1>Vítejte na RS:RP</h1>
       <p>Prozkoumejte náš Discord, zapojte se do komunity a objevte roleplay ve světě Ronogradu.</p>
-      <button class="btn">Přidejte se na Discord</button>
+      <button class="btn"><a href="https://discord.gg/Zrw6rqtzZs">Přidejte se na Discord</a></button>
     </div>
   </section>
 
   <section class="sections">
     <a class="card" href="about.html"><h2>O serveru</h2><p>Co nás dělá unikátními.</p></a>
     <a class="card" href="join-info.html"><h2>Jak se připojit</h2><p>Instrukce pro Roblox a Discord.</p></a>
-    <a class="card" href="a-team.html"><h2>Tým</h2><p>Seznam našich moderátorů a adminů.</p></a>
+    <a class="card" href="a-team.html"><h2>Náš A-Team</h2><p>Seznam našich moderátorů a adminů.</p></a>
     <a class="card" href="gallery.html"><h2>Galerie</h2><p>Fotky a ukázky z hry.</p></a>
   </section>
 
@@ -56,9 +71,9 @@
   </section>
 
   <footer>
-    © 2025 RS:RP | <a href="#">Kontakt</a>
+    © 2025 RS:RP | <a href="about.html">Kontakt</a>
   </footer>
 
-  <script src="./../res/scripts/theme.js"></script>
+  <script src="./../res/scripts/core.js"></script>
 </body>
 </html>

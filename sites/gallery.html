@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
+  <link rel="stylesheet" href="./../res/styles/gallery.css">
+  <title>RS:RP Ronograd State</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./../res/icons/logo.png" alt="logo" width="50" height="50">
+        <b>
+            <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
+        </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a style="text-decoration: underline;" href="main.html">Úvod</a></li>
+          <li><a href="about.html">O nás & Kontakt</a></li>
+          <li><a href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="a-team.html">Tým</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="thumb">
+          <img src="./../res/icons/sun.png" class="icon icon-sun" alt="Sun">
+          <img src="./../res/icons/moon.png" class="icon icon-moon" alt="Moon">
+        </span>
+      </span>
+    </label>
+  </header>
+
+  <section class="gallery-hero parallax theme-image" data-offset="-55" data-mobileoffset="0">
+    <div class="gallery-hero-overlay"></div>
+    <div class="gallery-hero-content">
+      <h1>Galerie</h1>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Fotky z našeho serveru</h2>
+    <div class="gallery">
+        <img src="./../res/gallery-images/image1.jpg" alt="Fotka z PVP eventu ve custom made vesnici před FOB" class="gallery-image">
+        <img src="./../res/gallery-images/image2.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery" class="gallery-image">
+        <img src="./../res/gallery-images/image3.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery" class="gallery-image">
+        <img src="./../res/gallery-images/image4.jpg" alt="Fotka ze společného cvičení 2 frakcí na serveru" class="gallery-image">
+        <img src="./../res/gallery-images/image5.jpg" alt="Fotka ze společného cvičení 2 frakcí na serveru" class="gallery-image">
+        <img src="./../res/gallery-images/image6.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery" class="gallery-image">
+        <img src="./../res/gallery-images/image7.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery [Chafgames]" class="gallery-image">
+        <img src="./../res/gallery-images/image8.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery" class="gallery-image">
+        <img src="./../res/gallery-images/image9.jpg" alt="Focení 2024 - skupina hráčů a členi A-T fotili propagační fotky na web a bannery" class="gallery-image">
+        <img src="./../res/gallery-images/image10.jpg" alt="PVP Event před FOB ve custom made vesničce Cropshire" class="gallery-image">
+        <img src="./../res/gallery-images/image11.jpg" alt="Depot PVE event 2024 (byl přestavěn custom depot)" class="gallery-image">
+        <img src="./../res/gallery-images/image12.jpg" alt="Depot PVE event 2024 (byl přestavěn custom depot)" class="gallery-image">
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modalImage" class="modal-content">
+        <div class="modal-caption"></div>
+        <button class="prev" onclick="showPrevImage()">&#10094;</button>
+        <button class="next" onclick="showNextImage()">&#10095;</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 RS:RP | <a href="about.html">Kontakt</a>
+  </footer>
+
+  <script src="./../res/scripts/core.js"></script>
+  <script src="./../res/scripts/gallery.js"></script>
+</body>
+</html>

@@ -3,7 +3,11 @@
   --bg-intro: #cccccc;
   --text: #000000;
   --accent: #1e90ff;
+  --accent-menu: #1e90ff;
   --thumb: #ffedde;
+  --menu-color: #005967;
+  --menu-bg: #b5b5b5;
+  --menu-li-bg: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -11,5 +15,9 @@
   --bg-intro: #302323;
   --text: #e0e0e0;
   --accent: #5a3a3a;
+  --accent-menu: #36555a;
   --thumb: #0b0534;
+  --menu-color: #7fc8d3;
+  --menu-bg: #00242a;
+  --menu-li-bg: #141a23;
 }
