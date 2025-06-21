@@ -14,11 +14,17 @@ function openModal(index) {
   updateModalImage();
 }
 
-// Funkce pro aktualizaci obrázku a popisu v modalu
+// Funkce pro aktualizaci obrázku a popisu v modalu s plynulým přechodem
 function updateModalImage() {
-  const currentImage = galleryImages[currentIndex];
-  modalImg.src = currentImage.src;
-  modalCaption.textContent = currentImage.alt; // Aktualizace popisu obrázku
+  modalImg.classList.add('hide');
+  setTimeout(() => {
+    const currentImage = galleryImages[currentIndex];
+    modalImg.src = currentImage.src;
+    modalCaption.textContent = currentImage.alt; // Aktualizace popisu obrázku
+    modalImg.onload = () => {
+      modalImg.classList.remove('hide');
+    };
+  }, 200); // 200ms odpovídá CSS transition
 }
 
 // Přidáme posluchače událostí pro každý obrázek v galerii

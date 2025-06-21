@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
+  <link rel="stylesheet" href="./../res/styles/about.css">
+  <title>RS:RP Ronograd State</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./../res/icons/logo.png" alt="logo" width="50" height="50">
+        <b>
+            <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
+        </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a href="main.html">Úvod</a></li>
+          <li><a style="text-decoration: underline;" href="about.html">O nás & Kontakt</a></li>
+          <li><a href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="a-team.html">Tým</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="thumb">
+          <img src="./../res/icons/sun.png" class="icon icon-sun" alt="Sun">
+          <img src="./../res/icons/moon.png" class="icon icon-moon" alt="Moon">
+        </span>
+      </span>
+    </label>
+  </header>
+
+  <section class="about-hero parallax theme-image" data-offset="-55" data-mobileoffset="0">
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-content">
+      <h1>O nás & Kontakt</h1>
+      <p></p>
+    </div>
+  </section>
+
+  <section class="info-section">
+      <div class="info-column">
+        <h2>Co je to projekt RS:RP?</h2>
+        <p>→ RS:RP (Ronograd State Military RolePlay) je komunitní herní server zaměřený na vojenský roleplay ve hře BRM5 na platformě Roblox.</p>
+        <p>→ Naším cílem je poskytovat zábavné a realistické prostředí pro hráče všech úrovní.</p>
+        <p>→ Zaměřujeme se na vojenské operace v prostředí fiktivního státu Ronograd, kde hráči plní různé úkoly a mise.</p>
+        <p>→ Naše komunita je přátelská a otevřená novým hráčům, kteří chtějí zažít kvalitní roleplay.</p>
+        <p>→ Klíčové prvky našeho serveru jsou spolupráce, strategie a dodržování pravidel pro co nejautentičtější zážitek.</p>
+      </div>
+      <div class="info-column">
+        <h2>Jak dlouho už tu jsme?</h2>
+        <p>→ Projekt RS:RP funguje již dva roky a během této doby se neustále rozvíjí.</p>
+        <p>→ Vybudovali jsme stabilní komunitu hráčů se zájmem o vojenský roleplay a taktické operace.</p>
+        <p>→ Pravidelně pořádáme nové eventy, mise a scénáře, které udržují hru zajímavou a dynamickou.</p>
+        <p>→ Neustále vylepšujeme herní pravidla a systémy, aby byl zážitek co nejrealističtější a férový.</p>
+        <p>→ Dva roky práce nám pomohly vytvořit propracované herní prostředí s důrazem na realismus a týmovou hru.</p>
+        <p>→ Původní zakladatel a majitel RS:RP byl .henryk_ neboli Henry</p>
+      </div>
+      <div class="info-column">
+        <h2>Co je naším cílem?</h2>
+        <p>→ Naším hlavním cílem je vytvořit komunitu, která si užívá realistický vojenský roleplay v dobře organizovaném prostředí.</p>
+        <p>→ Chceme, aby hráči rozvíjeli své strategické myšlení, týmovou spolupráci a taktické dovednosti.</p>
+        <p>→ Neustále pracujeme na zlepšování a rozšiřování herních možností, aby byl server stále zajímavý a dynamický.</p>
+        <p>→ Usilujeme o udržení férového a přátelského prostředí, kde si každý hráč může najít svou roli a užít si hru.</p>
+        <p>→ Důležité pro nás je poskytnout zábavný a realistický zážitek, který se bude neustále vyvíjet a přizpůsobovat potřebám hráčů.</p>
+      </div>
+  </section>
+
+  <section class="about-join">
+    <h3>Kontakt</h3>
+    <p>Pokud máte dotaz či nějaký problém, neváhejte nás kontaktovat.</p>
+    <ol>
+      <li>Náš Discord server: <a href="https://discord.gg/Zrw6rqtzZs" target="_blank">RS:RP Discord</a></li>
+      <li>E-mail serveru: <strong style="color: var(--text);">projekt.rsrp@gmail.com</strong></li>
+    </ol>
+    <p style="font-size: 15px;">Pokud se nás rozhodnete kontaktovat přes discord, tak veškerou komunikaci směřujte do ticket systému.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 RS:RP | <a href="about.html">Kontakt</a></p>
+  </footer>
+
+  <script src="./../res/scripts/core.js"></script>
+</body>
+</html>

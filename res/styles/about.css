@@ -1,0 +1,158 @@
+@import url('variables.css');
+
+.about-hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('./../images/about.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  color: var(--text);
+}
+
+.about-hero h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  color: aliceblue;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* ---About informace sekce--- */
+.info-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--bg);
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.info-column {
+  flex: 1 1 0;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--bg-intro);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 28px 24px;
+  margin-bottom: 0;
+}
+
+.info-column h2 {
+  color: var(--text);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.info-column p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ---about join section--- */
+.about-join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--bg-intro);
+  padding: 40px 20px;
+  max-width: 900px;
+  border-radius: 18px;
+  margin: auto auto 25px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.about-join h3 {
+  color: var(--text-h3);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-join p {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-join ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 20px 0;
+}
+
+.about-join ol li {
+  color: var(--text);
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.about-join a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-join a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivita pro mobily */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .info-column {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-hero {
+    height: 50vh;
+    background-attachment: scroll;
+    background-position-y: 0%;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .about-join {
+    padding: 24px 8px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: auto 20px 25px;
+  }
+}

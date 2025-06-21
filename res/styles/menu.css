@@ -72,3 +72,7 @@ ul li {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+ul li:hover {
+  background-color: var(--menu-li-hover-bg);
+}

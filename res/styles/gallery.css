@@ -28,11 +28,12 @@
   border-radius: 10px; /* Lehce zakulacené rohy obrázků */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 5px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .gallery img:hover {
   transform: scale(1.05); /* Zvýraznění při najetí myší */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
   
 /* Modal (fullscreen náhled obrázku) */
@@ -56,6 +57,12 @@
   max-height: 80%;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(93, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content.hide {
+  opacity: 0;
 }
 
 .modal-caption {
@@ -82,28 +89,28 @@
 }
   
 .modal .close:hover {
-  color: #bbb;
+  color: #dd0000;
 }
 
 button.prev {
   position: absolute;
-  left: 15px;
+  left: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
   
 button.next {
   position: absolute;
-  right: 15px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .modal button {
   display: inline-block;
-  background-color: var(--accent);
+  background-color: var(--gallery-btn);
   color: var(--text);
-  padding: 10px 20px;
+  padding: 20px 15px;
   margin: 10px 0;
   border: none;
   border-radius: 5px;
@@ -177,16 +184,18 @@ button.next {
   }
 
   button.prev {
-  padding: 70px 15px;
-  top: 75%;
+    padding: 70px 15px;
+    top: 75%;
   }
 
   button.next {
-  padding: 70px 15px;
-  top: 75%;
+    padding: 70px 15px;
+    top: 75%;
   }
 
   .gallery {
-  display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 obrázky na řádek */
+    gap: 10px;
   }
 }

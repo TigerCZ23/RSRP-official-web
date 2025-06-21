@@ -2,22 +2,30 @@
   --bg: #e3dede;
   --bg-intro: #cccccc;
   --text: #000000;
+  --text-h3: #09283c;
+  --link: #2f00ff;
   --accent: #1e90ff;
   --accent-menu: #1e90ff;
   --thumb: #ffedde;
+  --gallery-btn: #5c7187;
   --menu-color: #005967;
   --menu-bg: #b5b5b5;
   --menu-li-bg: #ffffff;
+  --menu-li-hover-bg: #dcdcdc;
 }
 
 [data-theme="dark"] {
   --bg: #121212;
   --bg-intro: #302323;
   --text: #e0e0e0;
+  --text-h3: #ffffff;
+  --link: #1893ff;
   --accent: #5a3a3a;
   --accent-menu: #36555a;
   --thumb: #0b0534;
+  --gallery-btn: #5182b4;
   --menu-color: #7fc8d3;
   --menu-bg: #00242a;
   --menu-li-bg: #141a23;
+  --menu-li-hover-bg: #1f2a33;
 }
