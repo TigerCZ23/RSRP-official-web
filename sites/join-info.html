@@ -1,11 +1,119 @@
-<section class="about-join">
-    <h3>Jak se připojit?</h3>
-    <p>Pokud máte zájem se k nám připojit, postupujte podle následujících kroků:</p>
-    <ol>
-      <li>Navštivte náš Discord server: <a href="https://discord.gg/Zrw6rqtzZs" target="_blank">RS:RP Discord</a></li>
-      <li>Přečtěte si naše pravidla a informace o serveru.</li>
-      <li>Vytvořte si účet na Robloxu, pokud ho ještě nemáte.</li>
-      <li>Hledejte náš herní server "RS:RP Ronograd State" a připojte se.</li>
-      <li>Po připojení se obraťte na moderátory nebo administrátory pro další instrukce a zapojení do komunity.</li>
-    </ol>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Jak se připojit | RS:RP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
+  <link rel="stylesheet" href="./../res/styles/join-info.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./../res/icons/logo.png" alt="logo" width="50" height="50">
+        <b>
+            <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
+        </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a href="main.html">Úvod</a></li>
+          <li><a href="about.html">O nás & Kontakt</a></li>
+          <li><a style="text-decoration: underline;" href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="a-team.html">Tým</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="thumb">
+          <img src="./../res/icons/sun.png" class="icon icon-sun" alt="Sun">
+          <img src="./../res/icons/moon.png" class="icon icon-moon" alt="Moon">
+        </span>
+      </span>
+    </label>
+  </header>
+
+  <section class="join-hero parallax theme-image" data-offset="-80" data-mobileoffset="0">
+    <div class="join-hero-overlay"></div>
+    <div class="join-hero-content">
+      <h1>O nás & Kontakt</h1>
+      <p></p>
+    </div>
   </section>
+
+  <section class="join-section">
+    <h2>Jak se připojit</h2>
+    <div class="join-steps">
+      <div class="join-step">
+        <span class="step-number">1</span>
+        <div>
+          <p>
+            <strong>Připoj se na Discord:</strong>
+            <a href="https://discord.gg/Zrw6rqtzZs" target="_blank">RS:RP Discord</a>
+          </p>
+        </div>
+      </div>
+      <div class="join-step">
+        <span class="step-number">2</span>
+        <div>
+          <p><strong>Přečti si pravidla a informace</strong> v příslušných kanálech.</p>
+        </div>
+      </div>
+      <div class="join-step">
+        <span class="step-number">3</span>
+        <div>
+          <p><strong>Vytvoř si účet na Robloxu</strong>, pokud ho ještě nemáš.</p>
+        </div>
+      </div>
+      <div class="join-step">
+        <span class="step-number">4</span>
+        <div>
+          <p><strong>Najdi server "RS:RP Ronograd State"</strong> a připoj se do hry.</p>
+        </div>
+      </div>
+      <div class="join-step">
+        <span class="step-number">5</span>
+        <div>
+          <p><strong>Kontaktuj moderátory</strong> pro další instrukce a zapojení do komunity.</p>
+        </div>
+      </div>
+    </div>
+    <div class="requirements">
+      <h3>Požadavky pro připojení</h3>
+      <ul class="requirements-list">
+        <li class="requirements-item">Věk minimálně 13 let</li>
+        <li class="requirements-item">Účet na Discordu a Robloxu</li>
+        <li class="requirements-item">Dodržování pravidel serveru</li>
+        <li class="requirements-item">Respektování ostatních hráčů a týmu</li>
+        <li class="requirements-item">Funkční mikrofon (doporučeno)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rules-section">
+    <h2>Pravidla serveru</h2>
+    <div class="rules-controls">
+      <input type="text" id="rules-search" placeholder="Vyhledat pravidlo...">
+      <div class="rules-categories" id="rules-categories"></div>
+    </div>
+    <div class="rules-list" id="rules-list"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 RS:RP | <a href="about.html">Kontakt</a></p>
+  </footer>
+
+  <script src="./../res/scripts/core.js"></script>
+  <script src="./../res/scripts/join-info.js"></script>
+</body>
+</html>
