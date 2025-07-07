@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
+  <link rel="stylesheet" href="./../res/styles/ateam.css">
+  <title>RS:RP Ronograd State</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./../res/icons/logo.png" alt="logo" width="50" height="50">
+        <b>
+            <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
+        </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a href="main.html">Úvod</a></li>
+          <li><a href="about.html">O nás & Kontakt</a></li>
+          <li><a href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a style="text-decoration: underline;" href="a-team.html">Tým</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="thumb">
+          <img src="./../res/icons/sun.png" class="icon icon-sun" alt="Sun">
+          <img src="./../res/icons/moon.png" class="icon icon-moon" alt="Moon">
+        </span>
+      </span>
+    </label>
+  </header>
+
+  <section class="ateam-hero parallax theme-image" data-offset="-200" data-mobileoffset="0">
+    <div class="ateam-hero-overlay"></div>
+    <div class="ateam-hero-content">
+      <h1>Administrátorský Tým RS:RP</h1>
+      <p>Seznam našeho aktuálního týmu, který se stará o chod serveru a komunitu.</p>
+      <p style="font-weight: 800; font-size: 15px; margin: 5px auto 5px;">Chceš se dozvědět více o naší historii?</p>
+      <button class="btn"><a href="about.html">Dozvědět se víc!</a></button>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Náš tým</h2>
+    <div class="team-container">
+      <h4>Vedení Projektu</h4>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/Tiger-pfp.png" alt="Tiger_CZ23">
+        <div class="team-info">
+          <h3>Tiger_CZ23</h3>
+          <p>Pozice: Majitel a Vedení projektu</p>
+          <p>Odpovědnost: Řízení serveru, kontrola všech týmů, rozhodování o updatech, správa webu. Financování a grafický design serveru.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/datsy-pfp.png" alt="_datsy_">
+        <div class="team-info">
+          <h3>_datsy_</h3>
+          <p>Pozice: Manažer</p>
+          <p>Odpovědnost: Řízení týmu RS:RP, odpovědnost za chod celého AT.</p>
+        </div>
+      </div>
+      <h4>Discord Technik</h4>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/Deathman-pfp.png" alt="death_man">
+        <div class="team-info">
+          <h3>death_man</h3>
+          <p>Pozice: Discord Technik</p>
+          <p>Odpovědnost: Nastavení botů, řešení technických problémů, správa serveru.</p>
+        </div>
+      </div>
+      <h4>Staff Tým</h4>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/zelenaymoreee-pfp.png" alt="zelenaymoreee">
+        <div class="team-info">
+          <h3>zelenaymoreee</h3>
+          <p>Pozice: Head of Staff</p>
+          <p>Odpovědnost: Řízení a koordinace Staff týmu, navrhování trestů, školení a rozdělování úkolů.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/tomscz-pfp.png" alt="tomscz">
+        <div class="team-info">
+          <h3>tomscz</h3>
+          <p>Pozice: Staff</p>
+          <p>Odpovědnost: Dohled nad hrou, kontrola pravidel, organizace eventů, příprava SSU.</p>
+        </div>
+      </div>
+      <h4>Administrátorský Tým</h4>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/frostty.1_95327-pfp.png" alt="frostty.1_95327">
+        <div class="team-info">
+          <h3>frostty.1_95327</h3>
+          <p>Pozice: Administrátor</p>
+          <p>Odpovědnost: Správa hry, komunikace s hráči, řešení problémů a udělování trestů.</p>
+        </div>
+      </div>
+      <h4>Moderátorský Tým</h4>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/zemanov_n-pfp.png" alt="zemanov_n">
+        <div class="team-info">
+          <h3>zemanov_n</h3>
+          <p>Pozice: Moderátorka, správkyně webu a oznámení</p>
+          <p>Odpovědnost: Udělování trestů (s nadřízeným), hlášení porušování pravidel, správa komunity.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/czechcaptain-pfp.png" alt="czechcaptain">
+        <div class="team-info">
+          <h3>czechcaptain</h3>
+          <p>Pozice: Moderátor, Builder</p>
+          <p>Odpovědnost: Udělování trestů (s nadřízeným), hlášení porušování pravidel, správa komunity. Stavba mapy serveru, hlášení incidentů týkajících se mapy.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/m_r3k2-pfp.png" alt="m_r3k2">
+        <div class="team-info">
+          <h3>m_r3k2</h3>
+          <p>Pozice: Moderátor, Builder</p>
+          <p>Odpovědnost: Udělování trestů (s nadřízeným), hlášení porušování pravidel, správa komunity. Stavba mapy serveru, hlášení incidentů týkajících se mapy.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/notchiko-pfp.png" alt="NotChiko">
+        <div class="team-info">
+          <h3>NotChiko</h3>
+          <p>Pozice: Moderátor, Builder</p>
+          <p>Odpovědnost: Udělování trestů (s nadřízeným), hlášení porušování pravidel, správa komunity. Stavba mapy serveru, hlášení incidentů týkajících se mapy.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="team-photo" src="./../res/icons/pfp/kubaaa0272-pfp.png" alt="kubaaa0272">
+        <div class="team-info">
+          <h3>kubaaa0272</h3>
+          <p>Pozice: Moderátor</p>
+          <p>Odpovědnost: Udělování trestů (s nadřízeným), hlášení porušování pravidel, správa komunity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 RS:RP | <a href="about.html">Kontakt</a></p>
+  </footer>
+
+  <script src="./../res/scripts/core.js"></script>
+</body>
+</html>

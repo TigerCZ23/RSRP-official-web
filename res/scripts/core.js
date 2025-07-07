@@ -48,7 +48,7 @@ function updateAllParallax() {
     el.style.backgroundPositionY = `${baseOffset + scroll * speed}px`;
 
     // ✅ Log bez chyb
-    console.log(`Speed: ${speed}, Scroll: ${scroll}, PosY: ${baseOffset + scroll * speed}`);
+    // console.log(`Speed: ${speed}, Scroll: ${scroll}, PosY: ${baseOffset + scroll * speed}`);
   });
 }
 

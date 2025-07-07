@@ -130,7 +130,7 @@ button.next {
   position: relative;
   height: 75vh;
   background-image: url('./../images/gallery.jpg');
-  background-size: cover;
+  background-size: calc(100% + 7%);
   background-position: center;
   background-attachment: fixed;
   display: flex;

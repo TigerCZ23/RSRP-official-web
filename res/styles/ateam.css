@@ -1,0 +1,151 @@
+@import url('variables.css');
+
+/* Hero sekce */
+.ateam-hero {
+  position: relative;
+  height: 55vh;
+  background-image: url('./../images/ateam.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Přidá zarovnání obsahu na střed */
+}
+
+.ateam-hero h1 {
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    transition: color 0.4s ease;
+}
+
+.ateam-hero p {
+    color: aliceblue;
+    font-size: 1.15rem;
+    margin-bottom: 0;
+    max-width: 600px;
+    transition: color 0.4s ease;
+}
+
+/* Team sekce */
+.team-section {
+    background: var(--ateam-section-bg);
+    margin: 32px auto;
+    padding: 32px 20px;
+    border-radius: 14px;
+    box-shadow: var(--ateam-shadow);
+    max-width: 900px;
+    color: var(--text);
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.25s ease;
+}
+
+.team-section h2 {
+    color: var(--accent-h2-ateam);
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 700;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.team-container h4 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 32px 0 12px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--accent-h4-bg), transparent 80%);
+    padding-left: 10px;
+    border-left: 4px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: none;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    background: var(--ateam-member-bg);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px var(--ateam-shadow-hover);
+    text-align: left;
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.25s ease;
+}
+
+.team-member:hover {
+    box-shadow: var(--ateam-shadow-hover);
+}
+
+.team-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid var(--ateam-photo-border);
+    background: #fff;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-info h3 {
+    margin: 0 0 8px 0;
+    color: var(--text-h3);
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.team-info p {
+    margin: 0;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+@media (max-width: 700px) {
+    .ateam-hero {
+        padding: 24px 6px;
+    }
+    .ateam-hero h1 {
+        font-size: 1.7rem;
+    }
+    .team-section {
+        padding: 18px 6px;
+        margin: 12px 7px;
+    }
+    .team-section h2 {
+        margin: 0;
+    }
+    .team-container h4 {
+        margin: 12px 0 0 7px;
+    }
+    .team-member {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        margin: 0 7px;
+    }
+    .team-photo {
+        margin: 0 0 12px 0;
+    }
+    .team-info h3 {
+        text-align: center;
+    }
+}
