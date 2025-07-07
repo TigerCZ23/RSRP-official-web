@@ -107,11 +107,11 @@
   border-radius: 10px;
   padding: 14px 18px;
   margin-bottom: 10px;
+  border: 1.5px solid var(--join-info-input-border);
+  box-shadow: none;
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  border: 1px solid rgba(24, 147, 255, 0.13);
-  box-shadow: none;
 }
 
 .step-number {
@@ -152,7 +152,7 @@
   color: var(--join-info-text);
   border-radius: 8px;
   padding: 16px 18px;
-  border: 1px solid rgba(24, 147, 255, 0.18);
+  border: 1.5px solid var(--join-info-input-border);
   box-shadow: none;
 }
 
@@ -182,7 +182,7 @@
   border-radius: 6px;
   padding: 7px 12px;
   margin-top: 6px;
-  border: 1px solid rgba(24, 147, 255, 0.13);
+  border: 1.5px solid var(--join-info-input-border);
   box-shadow: none;
 }
 
@@ -268,7 +268,7 @@
   color: var(--join-info-text);
   border-radius: 8px;
   margin-bottom: 10px;
-  border: 1px solid rgba(24, 147, 255, 0.13);
+  border: 1.5px solid var(--join-info-input-border);
   box-shadow: none;
   cursor: pointer;
   transition: border-color 0.2s;
@@ -297,13 +297,13 @@
 }
 
 .rule-desc {
-  max-height: 0;
-  overflow: hidden;
   background: var(--join-rule-desc-bg);
   color: var(--join-info-text);
+  border-radius: 0 0 8px 8px;
   padding: 0 18px;
   font-size: 0.98rem;
-  border-radius: 0 0 8px 8px;
+  max-height: 0;
+  overflow: hidden;
   transition: max-height 0.3s cubic-bezier(.4,0,.2,1), padding 0.3s;
 }
 
