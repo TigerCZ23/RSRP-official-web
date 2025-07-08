@@ -20,17 +20,21 @@
   --ateam-photo-border: #1e90ff;
   --ateam-shadow: 0 2px 16px rgba(30,144,255,0.12);
   --ateam-shadow-hover: 0 4px 18px rgba(30,144,255,0.25);
-  --join-section-bg: #f3f6fa;
-  --join-step-bg: #fff;
-  --join-step-number-bg: #1893ff;
-  --join-requirements-bg: #fff;
-  --join-rule-bg: #fff;
-  --join-rule-desc-bg: #f3f6fa;
-  --join-info-text: #23272f;
-  --join-info-input-bg: #fff;
-  --join-info-heading: #23272f;
-  --join-info-input-border: #1893ff;
-  --join-info-category-border: #1893ff;
+  --join-search-border-shadow: #1893ff;
+  --ji-bg: #f6f6f8;
+  --ji-bg-dark: #18191c;
+  --ji-card: #eceaea;
+  --ji-card-dark: #232329;
+  --ji-accent: #a86a6a;
+  --ji-accent-dark: #c47a7a;
+  --ji-text: #232329;
+  --ji-text-dark: #f6f6f8;
+  --ji-border: #c6c0c0;
+  --ji-border-dark: #33343a;
+  --ji-category-bg: #ececec;
+  --ji-category-bg-dark: #232329;
+  --ji-category-active: #a86a6a;
+  --ji-category-active-dark: #c47a7a;
 }
 
 [data-theme="dark"] {
@@ -55,15 +59,12 @@
   --ateam-photo-border: #6ca0f6;
   --ateam-shadow: 0 2px 16px rgba(0,0,0,0.10);
   --ateam-shadow-hover: 0 4px 18px rgba(0,0,0,0.18);
-  --join-section-bg: #23272f;
-  --join-step-bg: #23272f;
-  --join-step-number-bg: #1893ff;
-  --join-requirements-bg: #282c34;
-  --join-rule-bg: #282c34;
-  --join-rule-desc-bg: #23272f;
-  --join-info-text: #e0e6ed;
-  --join-info-input-bg: #23272f;
-  --join-info-heading: #fff;
-  --join-info-input-border: #1893ff;
-  --join-info-category-border: #1893ff;
+  --join-search-border-shadow: #1893ff;
+  --ji-bg: #18191c;
+  --ji-card: #232329;
+  --ji-accent: #c47a7a;
+  --ji-text: #f6f6f8;
+  --ji-border: #41434a;
+  --ji-category-bg: #232329;
+  --ji-category-active: #c47a7a;
 }

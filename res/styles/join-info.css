@@ -3,350 +3,356 @@
 /* HERO sekce */
 .join-hero {
   position: relative;
-  height: 45vh;
-  background-image: url('./../images/about.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  background: url('./../images/join-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
-.join-hero-overlay {
+body.dark .join-hero {
+  background: var(--ji-card-dark);
+}
+
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
   z-index: 1;
 }
 
 .join-hero-content {
   position: relative;
   z-index: 2;
-  color: var(--text);
-  padding: 24px;
-  width: 100%;
-  max-width: 700px;
-}
-
-.join-hero h1 {
-  color: aliceblue;
-  font-size: 2.5rem;
-  margin-bottom: 18px;
-  font-weight: 700;
-}
-
-.join-hero p {
-  color: aliceblue;
-  font-size: 1.15rem;
-  margin-bottom: 0;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- Připojení sekce --- */
-.join-section,
-.rules-section {
-  background: var(--join-section-bg);
-  border-radius: 18px;
-  box-shadow: 0 6px 32px 0 rgba(30, 144, 255, 0.06);
-  max-width: 900px;
-  margin: 40px auto 32px auto;
-  padding: 32px 24px;
-}
-
-@media (max-width: 900px) {
-  .join-section,
-  .rules-section {
-    max-width: 99vw;
-    margin: 24px 8px;
-    padding: 18px 4px;
-  }
-}
-
-@media (max-width: 700px) {
-  .join-section,
-  .rules-section {
-    padding: 10px 2vw;
-    margin: 12px 0;
-  }
-  .join-section h2,
-  .rules-section h2 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Nadpisy sekcí */
-.rules-section h2,
-.join-section h2 {
-  color: var(--join-info-heading);
-  font-size: 2rem;
-  margin-bottom: 18px;
   text-align: center;
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(30,144,255,0.06);
-}
-
-/* Texty a boxy */
-.join-section h2,
-.rules-section h2 {
-  color: var(--join-info-text);
-  font-size: 2rem;
-  margin-bottom: 18px;
-  text-align: center;
-  font-weight: 700;
-  text-shadow: none;
-}
-
-.join-step {
-  background: var(--join-step-bg);
-  color: var(--join-info-text);
-  border-radius: 10px;
-  padding: 14px 18px;
-  margin-bottom: 10px;
-  border: 1.5px solid var(--join-info-input-border);
-  box-shadow: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-
-.step-number {
-  background: var(--join-step-number-bg);
   color: #fff;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+}
+.join-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.join-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.join-steps-section, .requirements-section, .rules-section {
+  background: var(--ji-card);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem;
+  transition: background 0.3s;
+}
+
+body.dark .join-steps-section,
+body.dark .requirements-section,
+body.dark .rules-section {
+  background: var(--ji-card-dark);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.join-steps-section h2, .requirements-section h2 {
+  color: var(--ji-text);
+}
+
+.join-steps {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.join-steps li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1.2rem;
   font-size: 1.1rem;
-  margin-top: 2px;
+  transition: color 0.2s ease;
 }
 
-.join-step strong {
-  color: var(--text);
+.join-steps li b {
+  color: var(--ji-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.join-step a {
+.join-steps-span p {
+  color: var(--ji-text);
+}
+
+.join-steps-span a {
   color: var(--link);
   text-decoration: none;
-  font-weight: 600;
+  transition: color 0.2s ease;
 }
-.join-step a:hover {
+.join-steps-span a:hover {
   text-decoration: underline;
 }
 
-.join-step p {
-  margin: 0;
-  color: var(--join-info-text);
-  font-size: 1rem;
+.step-number {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+  background: var(--ji-accent);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+  transition: background 0.3s;
 }
 
-.requirements {
-  background: var(--join-requirements-bg);
-  color: var(--join-info-text);
-  border-radius: 8px;
-  padding: 16px 18px;
-  border: 1.5px solid var(--join-info-input-border);
-  box-shadow: none;
-}
-
-.requirements h3 {
-  color: var(--join-info-text);
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.15rem;
-}
-
-.requirements ul {
-  margin: 0;
-  padding-left: 18px;
+body.dark .step-number {
+  background: var(--ji-accent-dark);
 }
 
 .requirements-list {
-  margin: 0;
-  padding-left: 0;
+  margin: 1.2rem 0 0 0;
+  padding: 0;
+  font-size: 1.05rem;
   list-style: none;
 }
 
-.requirements-item {
-  margin-bottom: 6px;
-  color: var(--join-info-text);
-  font-size: 1rem;
-  background: var(--join-rule-bg);
-  border-radius: 6px;
-  padding: 7px 12px;
-  margin-top: 6px;
-  border: 1.5px solid var(--join-info-input-border);
-  box-shadow: none;
+.requirements-list li {
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--ji-text);
+  background-color: var(--ji-bg);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Pravidla sekce */
 .rules-section {
-  background: var(--join-section-bg);
-  border-radius: 18px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
-  max-width: 900px;
-  margin: 0 auto 32px auto;
-  padding: 32px 24px;
+  margin-top: 2rem;
 }
-
 .rules-section h2 {
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  font-size: 2rem;
-  margin-bottom: 18px;
-  text-align: center;
-  font-weight: 700;
+  color: var(--ji-text);
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
 }
 
 .rules-controls {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
 }
 
-/* Input pro hledání */
+/* Styl pro input vyhledávání */
 #rules-search {
-  background: var(--join-info-input-bg);
-  border: 1.5px solid var(--join-info-input-border);
-  color: var(--join-info-text);
+  flex: 1 1 220px;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
-  padding: 10px 14px;
+  border: 1.5px solid var(--ji-accent);
+  background: var(--ji-bg);
+  color: var(--ji-text);
   font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 8px;
-  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  transition: border 0.3s, background 0.3s, color 0.3s;
   outline: none;
 }
 
 #rules-search:focus {
-  border-color: #1893ff;
-  box-shadow: 0 0 0 2px #1893ff55;
-  background: var(--join-rule-desc-bg, #f5f7fa);
+  border-color: var(--join-search-border-shadow);
+  box-shadow: 0 0 0 1px var(--join-search-border-shadow);
+  background: var(--ji-card);
 }
 
+body.dark #rules-search {
+  border-color: var(--ji-accent-dark);
+  background: var(--ji-bg-dark);
+  color: var(--ji-text-dark);
+}
+
+body.dark #rules-search:focus {
+  border-color: var(--ji-accent-dark);
+  background: var(--ji-card-dark);
+}
+
+/* Styl pro kategorie pravidel */
 .rules-categories {
   display: flex;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
 }
 
-.rules-category {
-  border: 2px solid var(--join-info-category-border);
-  color: var(--join-info-text);
-  background: transparent;
-  border-radius: 20px;
-  padding: 7px 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+.rules-categories button {
+  background: var(--ji-category-bg);
+  color: var(--ji-text);
+  border: 1px solid var(--ji-border);
+  border-radius: 6px;
+  padding: 0.3rem 0.9rem;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-}
-
-.rules-category.active,
-.rules-category:hover {
-  background: var(--join-info-category-border);
-  color: #fff;
-  border-color: var(--join-info-category-border);
-}
-
-.rules-list {
-  margin-top: 18px;
-}
-
-.rule-item {
-  background: var(--join-rule-bg);
-  color: var(--join-info-text);
-  border-radius: 8px;
-  margin-bottom: 10px;
-  border: 1.5px solid var(--join-info-input-border);
-  box-shadow: none;
   cursor: pointer;
-  transition: border-color 0.2s;
-  overflow: hidden;
+  transition: background 0.3s, color 0.3s, border 0.2s;
+}
+.rules-categories button:hover {
+  background: var(--ji-category-hover);
+  color: var(--ji-text-hover);
+  border-color: var(--ji-border-hover);
 }
 
-.rule-title {
-  padding: 14px 18px;
-  font-weight: 700;
-  color: var(--join-step-number-bg);
+.rules-categories button.active,
+.rules-categories button:focus {
+  background: var(--ji-category-active);
+  color: #fff;
+  border-color: var(--ji-category-active);
+}
+
+body.dark .rules-categories button {
+  background: var(--ji-category-bg-dark);
+  color: var(--ji-text-dark);
+  border: 1px solid var(--ji-border-dark);
+}
+
+body.dark .rules-categories button.active,
+body.dark .rules-categories button:focus {
+  background: var(--ji-category-active-dark);
+  color: #fff;
+  border-color: var(--ji-category-active-dark);
+}
+
+/* Styl pro seznam pravidel */
+.rules-list {
+  margin-top: 1.2rem;
+  min-height: 80px;
   font-size: 1.08rem;
+  color: inherit;
+}
+
+.rules-list ul {
+  padding-left: 1.2rem;
+}
+
+.rules-list li {
+  margin-bottom: 0.7rem;
+}
+
+/* Styl pro jednotlivé pravidlo (accordion) */
+.rule-item {
+  border-bottom: 1px solid var(--ji-border);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+body.dark .rule-item {
+  border-bottom: 1px solid var(--ji-border-dark);
+}
+
+.rule-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--ji-text);
+  font-size: 1.08rem;
+  font-family: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+  outline: none;
+  transition: color 0.3s ease, background 0.3s ease;
 }
 
-.rule-title::after {
-  content: "▼";
-  font-size: 0.9em;
-  margin-left: 8px;
-  transition: transform 0.2s;
+.rule-category-label {
+  max-width: 125px;
+  min-width: 125px;
 }
 
-.rule-item.expanded .rule-title::after {
-  transform: rotate(-180deg);
+.rule-title {
+  font-weight: 600;
+  text-align: left;
+}
+
+.rule-arrow {
+  display: inline-block;
+  margin-left: 1rem;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+  width: 1.1em;
+  height: 1.1em;
+}
+.rule-arrow::before {
+  content: '';
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.4em 0.4em 0 0.4em;
+  border-color: var(--ji-accent) transparent transparent transparent;
+  width: 0;
+  height: 0;
+}
+
+body.dark .rule-arrow::before {
+  border-color: var(--ji-accent-dark) transparent transparent transparent;
+}
+
+.rule-item.open .rule-arrow {
+  transform: rotate(180deg);
 }
 
 .rule-desc {
-  background: var(--join-rule-desc-bg);
-  color: var(--join-info-text);
-  border-radius: 0 0 8px 8px;
-  padding: 0 18px;
-  font-size: 0.98rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(.4,0,.2,1), padding 0.3s;
+  opacity: 0;
+  transition: max-height 0.35s cubic-bezier(.4,2,.6,1), opacity 0.25s;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--ji-text);
+  margin-left: 0.2rem;
+  padding-right: 1.5rem;
+  will-change: max-height, opacity;
 }
 
-.rule-item.expanded .rule-desc {
-  max-height: 300px;
-  padding: 12px 18px 18px 18px;
+body.dark .rule-desc {
+  color: var(--ji-text-dark);
 }
 
-.join-step,
-.rule-item,
-.rule-desc {
-  background: var(--join-step-bg);
-  color: var(--join-info-text, var(--text));
-}
-
-/* Responsivita */
-@media (max-width: 900px) {
-  .rules-section {
-    max-width: 99vw;
-  }
+.rule-item.open .rule-desc {
+  opacity: 1;
+  /* max-height nastavuje JS */
+  margin-top: 0.3rem;
 }
 
 @media (max-width: 768px) {
-  .join-hero {
-    height: 32vh;
-    background-attachment: scroll;
-    padding: 20px 0;
+  .join-main {
+    padding: 1rem 0.2rem 2rem 0.2rem;
   }
-  .join-hero h1 {
-    font-size: 1.3rem;
+  .join-steps-section, .requirements-section, .rules-section {
+    padding: 1.2rem 0.7rem;
   }
-  .join-hero p {
+  .join-steps li {
     font-size: 1rem;
   }
-  .join-section, .rules-section {
-    padding: 14px 4px;
-    margin: 18px 0;
+  .requirements-list li {
+    margin-left: auto;
+    margin-right: auto;
   }
-  .rules-section h2, .join-section h2 {
-    font-size: 1.3rem;
-  }
-  .rule-title {
+  .step-number {
+    width: 1.8rem;
+    height: 1.8rem;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
     font-size: 1rem;
-    padding: 10px 12px;
   }
 }
