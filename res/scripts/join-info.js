@@ -1,4 +1,4 @@
-// Ukázkové kategorie a pravidla (můžeš rozšířit až na 100+ pravidel)
+// kategorie a pravidla (můžeš rozšířit až na 100+ pravidel)
 const RULES_DATA = [
   {
     category: "Obecná pravidla",
