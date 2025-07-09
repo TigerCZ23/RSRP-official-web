@@ -213,6 +213,7 @@ const RULES_DATA = [
                Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
                **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
                Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
+               Raid je možné provést až na následujícím SSU od schválení ticketu. (Neurčí-li člen AT jinak)\n\n\
                Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
       }
     ]
