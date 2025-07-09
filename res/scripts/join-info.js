@@ -67,12 +67,21 @@ const RULES_DATA = [
     rules: [
       {
         title: "Frakce a základny",
-        desc: "→ Nelze být ve více frakcích současně.\n\ → Frakci můžete opustit pouze, pokud máte důvod.\n\ → Neraidovat základny bez povolení v ticketu.\n\ → Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4)."
+        desc: " Nelze být ve více frakcích současně.\n\
+        Frakci můžete opustit pouze, pokud máte důvod.\n\
+        Neraidovat základny bez povolení v ticketu.\n\
+        Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
+        Max. počet není stanoven.\n\
+        Počty ve frakcích se můžou lišit max. o 4 lidi.\n\
+        Vybavení je předem dané.\n\
+        Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry.\n\
+        Je doporučeno si ve frakci udělat nějakou hierarchii včetěně rozdělení na squady.\n\
+        Frakce musí mít minimálně velitele a jeho zástupce."
       },
       {
         title: "Boj a chování se ve hře",
-        desc: "→ Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ → Při přestřelce se nesmí schovávat do safezóny.\n\n\ → Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
-              → Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ → Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ → Hráč u sebe může mít maximálně tři frag granáty (odpovědnost nese vedení frakce)."
+        desc: "Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ Při přestřelce se nesmí schovávat do safezóny.\n\n\ Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
+              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty, 6 zásobníků (včetně 1 ve zbrani), 10 bandáží a 10 tourniquetů. (odpovědnost nese vedení frakce).\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat."
       },
       {
         title: "Zákaz trollení a narušování RP",
@@ -92,17 +101,28 @@ const RULES_DATA = [
       },
       {
         title: "Krádež vybavení",
-        desc: "Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu.\n\V průběhu SSU je zakázáno si měnit výbavu (nevztahuje se ke kradenému vybavení)."
+        desc: "Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu.\n\n\ V průběhu SSU je zakázáno si měnit výbavu (nevztahuje se ke kradenému vybavení)."
       },
       {
         title: "Zákaz vitamínů",
-        desc: "→ Zákaz používání a držení (v inventáři) vitamínů."
+        desc: "Zákaz používání a držení (v inventáři) vitamínů."
       },
       {
         title: "Death screen & revive",
         desc: "Nesmíte se resetovat v \"death screenu\", musíte vyčkat na vykrvácení a poté vás hra respawne. Pokud jste ošetřeni jiným hráčem, tak si musíte lehnout, protože stále krvácíte. Když vás kdokoliv oživí, tak musíte doRPit ošetřování (podle pravidla RP Injuries)."
+      },
+      {
+        title: "Zabírání území",
+        desc: "Na zabrání použijte příkaz /capture, kde vyplníte požadované informace (jaké území jste obsadili, která armáda ho obsadila, …).\n\n\ Na zabírání basepointů musíte být minimálně dva – jeden, který fotí, a druhý, který je vidět na fotce."
+      },
+      {
+        title: "Airdoropy",
+        desc: "= Dodání objednávky materiálu pomocí auta\n\n\
+              Dva typy:\n\
+              → Muniční - dodání munice (a zbraní za příplatek)\n\
+              → Zdravotní - dodání zdravotnického materiálu\n\
+              (Žádá se v ticketu obecný)"
       }
-
     ]
   },
   {
@@ -126,13 +146,13 @@ const RULES_DATA = [
       },
       {
         title: "/me /do",
-        desc: "→ /me = nahrazení animací/činností, které ve hře nejdou udělat, ale musíte je vyjádřit slovně v /me stylu\n\
+        desc: "/me = nahrazení animací/činností, které ve hře nejdou udělat, ale musíte je vyjádřit slovně v /me stylu\n\
               např.: /me bere osobu nebo /me prohledává.\n\n\
-              → /do = nahrazení/vyjádření stavu/otázek, atd...\n\n\
+               /do = nahrazení/vyjádření stavu/otázek, atd...\n\n\
               Příklad:\n\
               - osoba 1 → /do je pán zraněný?\n\
               - osoba 2 → /do není.\n\n\
-              → Pokud není spojeno s akcí RP Injuries lze říkat přímo ve voice callu."
+               Pokud není spojeno s akcí RP Injuries lze říkat přímo ve voice callu."
       },
       {
         title: "Passive Roleplay",
@@ -140,12 +160,12 @@ const RULES_DATA = [
       },
       {
         title: "Fear RP",
-        desc: "Fear RP znamená, že pokud je vaše postava v nebezpečí, měla by jednat tak, aby se vyhnula nebezpečí. Například pokud je postava oblíkečena nebo napadena, měla by se podřídit požadavkům útočníka.\n\n\
+        desc: "Fear RP znamená, že pokud je vaše postava v nebezpečí, měla by jednat tak, aby se vyhnula nebezpečí. Například pokud je postava oblíkečena nebo napadena, měla by se podřídit požadavkům útočníka.\n\n\ Příklady:\n\
               → Musíte RPit strach z přesily, CK, ublížení, atd...\n\ → Musíte RPit fear i z nepřátelských základen (nesmíte se k nim přibližovat, pokud nemáte schválený raid ticket).\n\ → Příslušníci armád mají strach z teroristů (např. když jsou 3 teroristi proti jednomu členovi).\n\ → Armády RPí strach z toho, že nikdy neví, kdy a kde terorista zaútočí nebo něco udělá.\n\ → Teroristé mají fear z armád jen, když je obklíčí nebo mají alespoň stejný počet členů."
       },
       {
         title: "NonRP Driving",
-        desc: "= Nereálné řízení s vozidly.\n\n\ → S vozidly jezdíme tak, jak bychom s nimi jezdili v realitě.\n\ → Příklad: jízda po horách ve velké rychlosti, bourání do stromů a pokračování v jízdě atd.(v realitě by vám tyto aktivity poškodily/zničily vozidlo)."
+        desc: "= Nereálné řízení s vozidly.\n\ S vozidly jezdíme tak, jak bychom s nimi jezdili v realitě.\n\ Příklad: jízda po horách ve velké rychlosti, bourání do stromů a pokračování v jízdě atd.(v realitě by vám tyto aktivity poškodily/zničily vozidlo)."
       }
     ]
   },
@@ -154,11 +174,11 @@ const RULES_DATA = [
     rules: [
       {
         title: "Roadblock RP",
-        desc: "RoadBlock RP = možnost vytvářet malé checkpointy/roadblocky dle potřeby.\n\n\ → K jeho vytvoření je nutný validní důvod (např. probíhající konflikt mezi frakcemi v dané oblasti nebo ochrana místních civilistů, …).\n\ → Checkpointblock nesmí být permanentní - na jednom místě může být max. 1 hodinu."
+        desc: "RoadBlock RP = možnost vytvářet malé checkpointy/roadblocky dle potřeby.\n\n\ K jeho vytvoření je nutný validní důvod (např. probíhající konflikt mezi frakcemi v dané oblasti nebo ochrana místních civilistů, …).\n\ Checkpointblock nesmí být permanentní - na jednom místě může být max. 1 hodinu."
       },
       {
         title: "Ambush RP",
-        desc: "Umožňuje udělat krátkodobý ''ambush'' na projíždějící vozidla\n\n\ → Na chvíli (max. 15 minut) můžete zablokovat silnici a přepadat projíždějící vozidla.\n\ → Po uplynutí 15 minut jste povinen/povinná barikádu odstranit a obnovit provoz silnice a z oblasti se stáhnout.\n\ → Cooldown mezi ambushy je 1 hodina."
+        desc: "Umožňuje udělat krátkodobý ''ambush'' na projíždějící vozidla\n\n\ Na chvíli (max. 15 minut) můžete zablokovat silnici a přepadat projíždějící vozidla.\n\ Po uplynutí 15 minut jste povinen/povinná barikádu odstranit a obnovit provoz silnice a z oblasti se stáhnout.\n\ Cooldown mezi ambushy je 1 hodina."
       }
     ]
   },
@@ -174,34 +194,36 @@ const RULES_DATA = [
       {
         title: "RP Combat | RPC",
         desc: "= pravidlo, které zakazuje hráči jakýmkoliv způsobem kazit RP tím, že bude např. při přestřelce provádět bunny hopping, nerealisticky se hýbat či skákat atd...\n\n\
-              → Toto pravidlo platí, pokud je hráč v combatu/drží v ruce zbraň.\n\ → Pokud se hráč pohybuje nerealisticky, může být trestán administrátorským týmem."
+               Toto pravidlo platí, pokud je hráč v combatu/drží v ruce zbraň.\n\  Pokud se hráč pohybuje nerealisticky, může být trestán administrátorským týmem."
       },
       {
         title: "Combat log",
-        desc: "→ Combat log = odpojení z RP Akce (např. když je kropení/raid na vaší frakci, atd...)\n\n\
-              → Pokud dáte vědět oběma stranám, že musíte odejít, combat log se nepočítá (u únosu se při dalším připojení do hry musíte vrátit s frakcí a únos doRPit)\n\n\
-              → Pokud se vaše celá frakce (i jen např. 80%) u RP akce odpojí a všichni si i přesto napíšou důvod, může se to stále brát, jako obcházení pravidla, tudíž pravidlo platí"
+        desc: " Combat log = odpojení z RP Akce (např. když je kropení/raid na vaší frakci, atd...)\n\n\
+               Pokud dáte vědět oběma stranám, že musíte odejít, combat log se nepočítá (u únosu se při dalším připojení do hry musíte vrátit s frakcí a únos doRPit)\n\n\
+               Pokud se vaše celá frakce (i jen např. 80%) u RP akce odpojí a všichni si i přesto napíšou důvod, může se to stále brát, jako obcházení pravidla, tudíž pravidlo platí"
       },
       {
         title: "Combat Comeback",
-        desc: "→ Nesmíte se opakovaně vracet do přestřelky, ve které jste zemřeli\n\n\
-              → Pokud se bojuje o nějaký basepoint nebo podobné systémy na serveru, máte 5min cooldown, pak se můžete vrátit zpět do RP akce či její blízkosti, abyste mohli zaútočit\n\n\
-              → Když se kropí na jediné cestě k vaší base, kde jste byly pokropeni, počkejte nějakou dobu a druhý team by nadále cestu neměl campit (navazuje na Herní pravidlo Frakce a základny)"
+        desc: " Nesmíte se opakovaně vracet do přestřelky, ve které jste zemřeli\n\n\
+               Pokud se bojuje o nějaký basepoint nebo podobné systémy na serveru, máte 5min cooldown, pak se můžete vrátit zpět do RP akce či její blízkosti, abyste mohli zaútočit\n\n\
+               Když se kropí na jediné cestě k vaší base, kde jste byly pokropeni, počkejte nějakou dobu a druhý team by nadále cestu neměl campit (navazuje na Herní pravidlo Frakce a základny)"
       },
       {
         title: "Unášení lidí | Kidnapp RP",
-        desc: "→ Z jedné frakce smíte unést pouze 2 lidi za SSU. (Teroristé mohou až 3 lidi).\n\n\ → Člena jiné frakce nesmíte držet déle než 30min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\n\ → Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu, atd...).\n\n\
-              → Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci (neplatí pro teroristy).\n\n\ → Z hráčů se může krást výbava (max. 1 část) - frakce si ji může ponechat po dobu trvání SSU, nebo ji může prodat u obchodníka."
+        desc: " Z jedné frakce smíte unést pouze 3 lidi za SSU.\n\n\ → Člena jiné frakce nesmíte držet déle než 45 min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\n\  Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu, atd...).\n\n\
+               Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci (neplatí pro teroristy).\n\n\  Z hráčů se může krást výbava (max. 1 část) - frakce si ji může ponechat po dobu trvání SSU, nebo ji může prodat u obchodníka."
       },
       {
         title: "Pravidla pro raidy",
-        desc: "→ Během raidu můžete ukrást maximálně **3 vozidla** a převzít **odměnu**: buď **polovinu PT z jejich celkové ceny** (v případě lichých čísel se zaokrouhluje dolů), nebo **polovinu PT**, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
-              → Útočníci se spawnují na své základně, ale **jakmile zemřou, nesmí se vracet zpět do konfliktu**.\n\n\
-              → Spawn obránců je **přesunut na neutrální, vzdálené místo**, aby se nemohli okamžitě vracet na svou základnu.\n\n\
-              → Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
-              → **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
-              → Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
-              → Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
+        desc: " Během raidu můžete ukrást maximálně **3 vozidla** a převzít **odměnu**: buď **polovinu PT z jejich celkové ceny** (v případě lichých čísel se zaokrouhluje dolů), nebo **polovinu PT**, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
+               Útočníci se spawnují na své základně, ale **jakmile zemřou, nesmí se vracet zpět do konfliktu**.\n\n\
+               Spawn obránců je **přesunut na neutrální, vzdálené místo**, aby se nemohli okamžitě vracet na svou základnu.\n\n\
+               Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
+               **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
+               Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
+               Raid je možné provést až na následujícím SSU od schválení ticketu. (Neurčí-li člen AT jinak)\n\n\
+               Pro raid musíte také IC vědět, kde se nachází základna nepřítele.\n\n\
+               Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
       }
     ]
   },
@@ -210,21 +232,23 @@ const RULES_DATA = [
     rules: [
       {
         title: "RP Injuries",
-        desc: "→ Pokud je vaše postava zraněná, postřelená, do něčeho nabourala, atp., musíte to RPit s pomocí /me a popř. /do k ošetření zranění.\n\n\ → Pokud jste v přestřelce, zasažení byste měli vyjádřit i zvukově např. výkřikem, jesliže se delší chvíli v okruhu 10m od vás nestřílí, můžete se začít ošetřovat s /me a /do.\n\n\
-        → Jestliže se ocitnete v death screenu (animace, při které zemřete) a někdo vás vyléčí, musíte si lehnout na zem, dokud vás medic neošetří, také nesmíte střílet, plazit se nebo se jakýmkoliv jiným způsobem hýbat.\n\n\ → Ošetřování RP Injuries musíte psát do herního chatu pomocí /me a /do."
+        desc: " Pokud je vaše postava zraněná, postřelená, do něčeho nabourala, atp., musíte to RPit s pomocí /me a popř. /do k ošetření zranění.\n\n\ Pokud jste v přestřelce, zasažení byste měli vyjádřit i zvukově např. výkřikem, jesliže se delší chvíli v okruhu 10m od vás nestřílí, můžete se začít ošetřovat s /me a /do.\n\n\
+         Jestliže se ocitnete v death screenu (animace, při které zemřete) a někdo vás vyléčí, musíte si lehnout na zem, dokud vás medic neošetří, také nesmíte střílet, plazit se nebo se jakýmkoliv jiným způsobem hýbat.\n\n\  Ošetřování RP Injuries musíte psát do herního chatu pomocí /me a /do."
       },
       {
         title: "NVL | Not Valuing Life",
-        desc: "NVL = Nevážení si vlastního života herní postavy\n\n\ Příklad:\n\ člověk v běžném životě nepoběží na místo, na kterém se po něm střílí nebo se jen tak nenechá přejet či odpálit vlastním granátem."
+        desc: "NVL = Nevážení si vlastního života herní postavy\n\n\ Příklad:\n\ → Člověk v běžném životě nepoběží na místo, na kterém se po něm střílí nebo se jen tak nenechá přejet či odpálit vlastním granátem."
       },
       {
         title: "PK | Player Kill",
-        desc: "→ PK = zapomenutí RP akce od jejíího začátku.\n\ → PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (víc jak 5 minut).\n\ → FullPK zde není."
+        desc: " PK = zapomenutí RP akce od jejíího začátku.\n\n\  PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (víc jak 5 minut).\n\  FullPK zde není."
       },
       {
         title: "CK | Character Kill",
-        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\ Je zde několik druhů CK:\n\n\ → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\ → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\n\
-               → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\ → SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry."
+        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\Je zde několik druhů CK:\n\n\
+              → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\
+              → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\
+              → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\  SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry."
       }
     ]
   },
@@ -233,20 +257,21 @@ const RULES_DATA = [
     rules: [
       {
         title: "Mixing",
-        desc: "→ Míchání vašich OOC vědomostí/vlastností do IC charakteru.\n\ → Příklad: jinému hráči v IC řeknete: ''Podívej se do dms, něco jsem ti tam poslal.''\n\ → Jako porušení tohoto pravidla se počítá i IC oslovení nonRP jménem/přezdívkou."
+        desc: " Míchání vašich OOC vědomostí/vlastností do IC charakteru.\n\
+        Příklad:\n\ → Jinému hráči v IC řeknete: ''Podívej se do dms, něco jsem ti tam poslal.''\n\  Jako porušení tohoto pravidla se počítá i IC oslovení nonRP jménem/přezdívkou."
       },
       {
         title: "Metagaming",
-        desc: "→ Metagaming je získávání informací jinak než herním způsobem (IC).\n\ → Je zakázané i pobízení ostatních hráčů k Metagamingu!\n\n\
-              Příklad:\n\ - Sdílení informací na Discordu a jejich následné využití ve hře.\n\n\ → Nabádání k Metagamingu:\n\
+        desc: " Metagaming je získávání informací jinak než herním způsobem (IC).\n\  Je zakázané i pobízení ostatních hráčů k Metagamingu!\n\n\
+              Příklad:\n\ → Sdílení informací na Discordu a jejich následné využití ve hře.\n\ → Nabádání k Metagamingu:\n\
               1. Posílání nevyžádaných IC informací v OOC (sdílení obrazovky na Discordu).\n\ 2. Vyžadování IC informací OOC."
       },
       {
         title: "Radio RP",
-        desc: "→ Zakazuje hráčům používat in-game radio/vysílačku, pokud jim byla odebrána nebo ji nemají u sebe - na vestě/batohu (musí být vizuálně vidět).\n\
-              → Dále je zakázáno vyhledávat a zkoušet náhodné frekvence za cílem najít nepřátelskou vysílačku, a tím získat výhodu.\n\
-              → Jediný způsob, jak získat odposlech nepřátelské vysílačky, je získat vysílačku/frekvenci od nějakého člena z nepřátelské frakce.\n\
-              → Během SSU frakce mohou libovolně měnit své frekvence. Pokud dojde k nalezení frekvence, kterou už nějaká frakce používá, tak se přelaďte na jinou frekvenci a zároveň informujte frakci, že jste omylem naladili jejich frekvenci."
+        desc: " Zakazuje hráčům používat in-game radio/vysílačku, pokud jim byla odebrána nebo ji nemají u sebe - na vestě/batohu (musí být vizuálně vidět).\n\n\
+               Dále je zakázáno vyhledávat a zkoušet náhodné frekvence za cílem najít nepřátelskou vysílačku, a tím získat výhodu.\n\n\
+               Jediný způsob, jak získat odposlech nepřátelské vysílačky, je získat vysílačku/frekvenci od nějakého člena z nepřátelské frakce.\n\n\
+               Během SSU frakce mohou libovolně měnit své frekvence. Pokud dojde k nalezení frekvence, kterou už nějaká frakce používá, tak se přelaďte na jinou frekvenci a zároveň informujte frakci, že jste omylem naladili jejich frekvenci."
       }
     ]
   },
@@ -255,14 +280,50 @@ const RULES_DATA = [
     rules: [
       {
         title: "Gross RP",
-        desc: "→ Jedná se o nechutné RP, jako je tvrdé mučení.\n\n\ → Bez vypsání CK nemůžete oběti řezat končetiny nebo udělat stálé následky (řezání je povolené).\n\n\ → Na gross se musíte ptát každého, kdo je přítomen v okolí grossu. Když přijde někdo nový k RP akci, musí se gross pozastavit a všichni ho opět povolit.\n\n\
-              → Všichni v daném voice callu a v dané RP akci gross musí povolit, pokud jeden člověk zamítne, tak se gross nesmí konat.\n\n\ → Sexuální gross může být povolen, pokud všem osobám bylo OOC 15 a více let."
+        desc: " Jedná se o nechutné RP, jako je tvrdé mučení.\n\n\  Bez vypsání CK nemůžete oběti řezat končetiny nebo udělat stálé následky (řezání je povolené).\n\n\  Na gross se musíte ptát každého, kdo je přítomen v okolí grossu. Když přijde někdo nový k RP akci, musí se gross pozastavit a všichni ho opět povolit.\n\n\
+               Všichni v daném voice callu a v dané RP akci gross musí povolit, pokud jeden člověk zamítne, tak se gross nesmí konat.\n\n\ Sexuální gross může být povolen, pokud všem osobám bylo OOC 15 a více let."
       },
       {
         title: "Trash/Fail RP",
-        desc: "→ Toto pravidlo udává jakýkoliv pokus o pokažení nebo trolení RP. Můžeme tu počítat i jednání/chování určitých frakcí.\n\n\ → Pokud budete na toto pravidlo upozorněni, vždy se snažte zlepšit váš styl RP.\n\n\ → Je přísně zakázané jen tak pozastavit RP prostřednictvím chatu.\n\n\ → Hráč je povinný situaci doRPit."
+        desc: " Toto pravidlo udává jakýkoliv pokus o pokažení nebo trolení RP. Můžeme tu počítat i jednání/chování určitých frakcí.\n\n\  Pokud budete na toto pravidlo upozorněni, vždy se snažte zlepšit váš styl RP.\n\n\  Je přísně zakázané jen tak pozastavit RP prostřednictvím chatu.\n\n\  Hráč je povinný situaci doRPit."
       }
     ]
+  },
+  {
+  category: "Ekonomika frakcí",
+  rules: [
+    {
+      title: "Získávání PT",
+      desc: "Pro získání PT musíte mít ve chvíli započítání (každých 30 minut) mít zabrané určité místo na mapě.\n\n\
+            Za každé zabrané místo získáte 2 PT.\n\n\ Na mapě je 9 míst, které můžete zabrat."
+   },
+   {
+     title: "Shop",
+     desc: "Pozemní vozidla:\n\
+            4x4 - 4pt\n\
+            M1038 - 4pt\n\
+            Pvp - 4pt\n\
+            Humvee - 5pt\n\
+            Srtv - 5pt + gamepass\n\
+            Tiger - 6pt\n\
+            Vab - 6pt\n\
+            Vbmr - 6pt\n\
+            Ural - 7pt\n\
+            M1083 - 8pt\n\
+            M1078 - 8pt\n\
+            Cougar - 9pt\n\
+            Stryker - 9pt\n\n\
+            Helikoptéry:\n\
+            MH-6 - 6pt\n\
+            NH90 TTH - 11pt\n\
+            Mi-8MTV2 - 11pt\n\
+            CH-53D - 13pt\n\
+            UH-60V - 13pt\n\n\
+            Jiné:\n\
+            Airdropy - cena podle toho co chcete\n\
+            (Žádá se v ticketu obecný)"
+   }
+  ]
   },
   {
     category: "Tresty a sankce",
@@ -273,14 +334,12 @@ const RULES_DATA = [
               > 🟡 Warn 1\n\n\
               **🔸 Za opakované porušování pravidel:**\n\
               > 🟠 Warn 2, Warn 3 → poté BAN\n\n\
-              **🔸 Nepřiznání vitamin bugu** *(výjimka: okamžitý reset po revive)*:\n\
-              > 🟠 Warn 2\n\n\
               **🔸 Porušení frakčních pravidel:**\n\
               > 🟥 Frakční warn 1, 2, 3 → ❌ Smazání frakce\n\n\
               ---\n\n\
               **⏱ Sankce podle warnu:**\n\
-              > ⚠️ Warn 1 → max. pauza **10 minut**\n\
-              > ⚠️ Warn 2 → max. pauza **1 hodina**\n\
+              > ⚠️ Warn 1 → max. pauza **45 minut**\n\
+              > ⚠️ Warn 2 → max. pauza **3 hodiny**\n\
               > ⚠️ Warn 3 → max. pauza **1 den**\n\
               ---\n\n\
               **🏳️ Frakční varování:**\n\
