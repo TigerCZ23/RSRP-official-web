@@ -224,7 +224,7 @@ const RULES_DATA = [
       },
       {
         title: "PK | Player Kill",
-        desc: " PK = zapomenutí RP akce od jejíího začátku.\n\  PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (víc jak 5 minut).\n\  FullPK zde není."
+        desc: " PK = zapomenutí RP akce od jejíího začátku.\n\n\  PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (víc jak 5 minut).\n\  FullPK zde není."
       },
       {
         title: "CK | Character Kill",
