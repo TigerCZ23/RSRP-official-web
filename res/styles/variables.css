@@ -35,6 +35,9 @@
   --ji-category-bg-dark: #232329;
   --ji-category-active: #a86a6a;
   --ji-category-active-dark: #c47a7a;
+  --btn-buy: #22c55e;
+  --btn-buy-hover: #15803d;
+  --vip-card-bg: #c4c4c4;
 }
 
 [data-theme="dark"] {
@@ -67,4 +70,7 @@
   --ji-border: #41434a;
   --ji-category-bg: #232329;
   --ji-category-active: #c47a7a;
+  --btn-buy: #22c55e;
+  --btn-buy-hover: #15803d;
+  --vip-card-bg: #18191c;
 }

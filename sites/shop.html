@@ -44,27 +44,99 @@
     </label>
   </header>
 
-  <section class="vip-carousel">
-  <button class="carousel-btn left" onclick="prevSlide()" aria-label="Předchozí VIP">❮</button>
+  <section class="shop-hero theme-image" data-offset="0" data-mobileoffset="0"> <!-- Paralax tu není -->
+    <div class="shop-hero-overlay"></div>
+    <div class="shop-hero-content">
+      <h1>VIP | Chceš nás podpořit?</h1>
+      <p>Podpoř nás zakoupením VIP a získej exkluzivní výhody!<br>Budeme rádi za každou podporu s financováním.</p>
+    </div>
+    <section class="vip-carousel-wrapper">
+    <button class="vip-arrow left" onclick="prevVIP()">&#10094;</button>
 
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <h2>VIP Bronze</h2>
-      <p>Základní výhody pro začátečníky.</p>
-    </div>
-    <div class="carousel-slide">
-      <h2>VIP Silver</h2>
-      <p>Rozšířené možnosti a odměny.</p>
-    </div>
-    <div class="carousel-slide">
-      <h2>VIP Gold</h2>
-      <p>Kompletní přístup ke všemu + bonusy.</p>
-    </div>
-  </div>
+    <div class="vip-carousel">
+      <div class="vip-track" id="vip-track">
+        <!-- Fake Last (kopie poslední) -->
+        <div class="vip-card">
+          <h3>Server Booster</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Ptáš se, co ti Základní VIP+ přinese?</p>
+          <ol>
+            <li>+ 20% ze všech systémů</li>
+            <li>→ Exkluzivní role na Discordu a imunita ve zpomalených chatech</li>
+            <li>→ možnost používání soundboardu na discordu</li>
+            <li>→ možnost posílat gify všude na serveru</li>
+            <li>→ přístup do VIP chatu</li>
+            <li>→ možnost účasti debat s AT ohledně developmentu</li>
+            <li style="font-size: 12px; color: #e25a5a;">→ cenu neurčuje A-T [nic kromě zahřátého srdíčka a smajlíků na serveru z toho nemáme :)]</li>
+          </ol>
+  
+          <a href="https://discord.com/nitro" class="btn-buy">Koupit</a>
+        </div>
 
-  <button class="carousel-btn right" onclick="nextSlide()" aria-label="Následující VIP">❯</button>
+        <!-- Skutečné karty -->
+        <div class="vip-card">
+          <h3>Základní VIP</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Ptáš se, co ti Základní VIP přinese?</p>
+          <ol>
+            <li>+ 10% ze všech systémů</li>
+            <li>→ Exkluzivní role na Discordu a imunita ve zpomalených chatech</li>
+            <li>→ možnost používání soundboardu na discordu</li>
+            <li>→ možnost posílat gify všude na serveru</li>
+            <li>→ přístup do VIP chatu</li>
+          </ol>
+  
+          <a href="https://www.roblox.com/catalog/18632679170/RS-RP-VIP-1-month" class="btn-buy">Koupit</a>
+        </div>
+
+        <div class="vip-card">
+          <h3>Základní VIP+</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Ptáš se, co ti Základní VIP+ přinese?</p>
+          <ol>
+            <li>+ 15% ze všech systémů</li>
+            <li>→ Exkluzivní role na Discordu a imunita ve zpomalených chatech</li>
+            <li>→ možnost používání soundboardu na discordu</li>
+            <li>→ možnost posílat gify všude na serveru</li>
+            <li>→ přístup do VIP chatu</li>
+            <li>→ možnost účasti debat s AT ohledně developmentu</li>
+          </ol>
+  
+          <a href="https://www.roblox.com/catalog/18632722906/RS-RP-VIP-1-month" class="btn-buy">Koupit</a>
+        </div>
+        <div class="vip-card">
+          <h3>Server Booster</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Ptáš se, co ti Základní VIP+ přinese?</p>
+          <ol>
+            <li>+ 20% ze všech systémů</li>
+            <li>→ Exkluzivní role na Discordu a imunita ve zpomalených chatech</li>
+            <li>→ možnost používání soundboardu na discordu</li>
+            <li>→ možnost posílat gify všude na serveru</li>
+            <li>→ přístup do VIP chatu</li>
+            <li>→ možnost účasti debat s AT ohledně developmentu</li>
+            <li style="font-size: 12px; color: #e25a5a;">→ cenu neurčuje A-T [nic kromě zahřátého srdíčka a smajlíků na serveru z toho nemáme :)]</li>
+          </ol>
+  
+          <a href="https://discord.com/nitro" class="btn-buy">Koupit</a>
+        </div>
+
+        <!-- Fake First (kopie první) -->
+        <div class="vip-card">
+          <h3>Základní VIP</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Ptáš se, co ti Základní VIP přinese?</p>
+          <ol>
+            <li>+ 10% ze všech systémů</li>
+            <li>→ Exkluzivní role na Discordu a imunita ve zpomalených chatech</li>
+            <li>→ možnost používání soundboardu na discordu</li>
+            <li>→ možnost posílat gify všude na serveru</li>
+            <li>→ přístup do VIP chatu</li>
+          </ol>
+  
+          <a href="https://www.roblox.com/catalog/18632679170/RS-RP-VIP-1-month" class="btn-buy">Koupit</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="vip-arrow right" onclick="nextVIP()">&#10095;</button>
+    </section>
   </section>
-
 
   <footer>
     <p>© 2025 RS:RP | <a href="about.html">Kontakt</a></p>

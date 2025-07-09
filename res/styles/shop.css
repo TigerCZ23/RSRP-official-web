@@ -1,45 +1,198 @@
 @import url('variables.css');
 
-.vip-carousel {
+.vip-carousel-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 2rem auto;
-  overflow: hidden;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--accent, #333);
-  color: #fff;
-  border: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
-.carousel-btn.left {
-  left: 0.5rem;
-}
-.carousel-btn.right {
-  right: 0.5rem;
-}
-
-.carousel-container {
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  max-width: 600px;
+  padding: 30px 0px;
+  background-color: var(--ji-card);
+  border-radius: 12px;
+  box-shadow: var(--ateam-shadow);
+  opacity: 0.9;
   overflow: hidden;
+  z-index: 1;
 }
 
-.carousel-slide {
-  flex: 0 0 100%;
+.vip-carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+}
+
+.vip-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.vip-buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
   box-sizing: border-box;
-  padding: 2rem;
-  background-color: var(--bg-intro, #f0f0f0);
-  color: var(--text, #000);
+}
+
+.vip-arrow {
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.vip-arrow.left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 1.8px 125px 1.8px 25px;
+  background: linear-gradient(90deg, #314269, var(--ji-card));
+  border-right: 2px var(--bg);
+  transition: background 0.3s ease;
+}
+.vip-arrow.left:hover {
+  background: linear-gradient(90deg, #617299, var(--ji-card));
+}
+
+.vip-arrow.right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 1.8px 25px 1.8px 125px;
+  background: linear-gradient(90deg, var(--ji-card), #314269);
+  border-left: 2px var(--bg);
+  transition: background 0.3s ease;
+}
+.vip-arrow.right:hover {
+  background: linear-gradient(90deg, var(--ji-card), #617299);
+}
+
+.btn-buy {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--btn-buy);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 25px;
+  border-radius: 6px;
+  font-weight: 400;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1); /* Výchozí velikost */
+}
+
+.btn-buy:hover {
+  background-color: #8a5b5b;
+  transform: scale(1.07); /* Zvětšení o 5 % */
+  background-color: var(--btn-buy-hover);
+}
+
+.vip-card {
+  flex: 0 0 100%;
+  padding: 15px 20px 70px; /* spodní padding kvůli tlačítku */
+  min-height: 300px;
+  position: relative;
   text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: var(--vip-card-bg);
+  box-shadow: 0 -4px 10px var(--ateam-shadow);
+}
+.vip-card h3 {
+  color: var(--text-h3);
+}
+.vip-card ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.vip-card ol li {
+  color: var(--text);
+  font-size: 18px;
+}
+
+/* ===== HERO SECTION (PARALLAX) ===== */
+.shop-hero {
+  position: relative;
+  height: 75vh;
+  background-image: url('./../images/vip_bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: 1;
+}
+
+.shop-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  margin-left: 75px;
+  color: var(--text);
+}
+
+.shop-hero h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.shop-hero p {
+  color: aliceblue;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .shop-hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .shop-hero-content {
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .shop-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .shop-hero p {
+    font-size: 0.9rem;
+  }
+
+  .vip-carousel-wrapper {
+    margin: 0 auto 60px;
+    width: 100%;
+    max-width: 90vw;
+    padding: 20px 0px 50px;
+  }
+
+  .vip-arrow.right {
+    padding: 12px 25px 12px 100px;
+  }
+  .vip-arrow.left {
+    padding: 12px 100px 12px 25px;;
+  }
 }
