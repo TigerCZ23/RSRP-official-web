@@ -67,11 +67,12 @@ const RULES_DATA = [
     rules: [
       {
         title: "Frakce a základny",
-        desc: "→ Nelze být ve více frakcích současně.\n\ → Frakci můžete opustit pouze, pokud máte důvod.\n\ → Neraidovat základny bez povolení v ticketu.\n\ → Frakce může za SSU ukrást max. 1 kus nepřátelské vojenské techniky (při raidu 2 kusy)."
+        desc: "→ Nelze být ve více frakcích současně.\n\ → Frakci můžete opustit pouze, pokud máte důvod.\n\ → Neraidovat základny bez povolení v ticketu.\n\ → Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4)."
       },
       {
         title: "Boj a chování se ve hře",
-        desc: "→ Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ → Při přestřelce se nesmí schovávat do safezóny.\n\n\ → Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\ → Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ → Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ → Hráč u sebe může mít maximálně tři frag granáty (odpovědnost nese vedení frakce)."
+        desc: "→ Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ → Při přestřelce se nesmí schovávat do safezóny.\n\n\ → Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
+              → Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ → Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ → Hráč u sebe může mít maximálně tři frag granáty (odpovědnost nese vedení frakce)."
       },
       {
         title: "Zákaz trollení a narušování RP",
@@ -91,12 +92,17 @@ const RULES_DATA = [
       },
       {
         title: "Krádež vybavení",
-        desc: "Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu."
+        desc: "Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu.\n\V průběhu SSU je zakázáno si měnit výbavu (nevztahuje se ke kradenému vybavení)."
       },
       {
         title: "Zákaz vitamínů",
         desc: "→ Zákaz používání a držení (v inventáři) vitamínů."
+      },
+      {
+        title: "Death screen & revive",
+        desc: "Nesmíte se resetovat v \"death screenu\", musíte vyčkat na vykrvácení a poté vás hra respawne. Pokud jste ošetřeni jiným hráčem, tak si musíte lehnout, protože stále krvácíte. Když vás kdokoliv oživí, tak musíte doRPit ošetřování (podle pravidla RP Injuries)."
       }
+
     ]
   },
   {
@@ -217,7 +223,8 @@ const RULES_DATA = [
       },
       {
         title: "CK | Character Kill",
-        desc: "Je zde několik druhů CK:\n\n\ → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\ → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\n\ → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\ → SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry"
+        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\Je zde několik druhů CK:\n\n\ → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\ → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\n\
+               → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\ → SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry."
       }
     ]
   },
