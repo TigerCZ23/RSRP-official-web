@@ -1,4 +1,4 @@
-// Ukázkové kategorie a pravidla (můžeš rozšířit až na 100+ pravidel)
+// kategorie a pravidla (můžeš rozšířit až na 100+ pravidel)
 const RULES_DATA = [
   {
     category: "Obecná pravidla",
@@ -73,7 +73,7 @@ const RULES_DATA = [
       {
         title: "Boj a chování se ve hře",
         desc: "Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ Při přestřelce se nesmí schovávat do safezóny.\n\n\ Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
-              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty. (odpovědnost nese vedení frakce)."
+              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty. (odpovědnost nese vedení frakce).\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat."
       },
       {
         title: "Zákaz trollení a narušování RP",
@@ -277,8 +277,31 @@ const RULES_DATA = [
   rules: [
     {
       title: "Získávání PT",
-      desc: "..."
-    }
+      desc: "Pro získání PT musíte mít ve chvíli započítání (každých 30 minut) mít zabrané určité místo na mapě.\n\n\
+            Za každé zabrané místo získáte 2 PT.\n\n\ Na mapě je 9 míst, které můžete zabrat."
+   },
+   {
+     title: "Shop",
+     desc: "Pozemní vozidla:\n\ 4x4 - 4pt\n\
+            M1038 - 4pt\n\
+            Pvp - 4pt\n\
+            Humvee - 5pt\n\
+            Srtv - 5pt + gamepass\n\
+            Tiger - 6pt\n\
+            Vab - 6pt\n\
+            Vbmr - 6pt\n\
+            Ural - 7pt\n\
+            M1083 - 8pt\n\
+            M1078 - 8pt\n\
+            Cougar - 9pt\n\
+            Stryker - 9pt\n\n\
+            Helikoptéry:\n\
+            MH-6 - 6pt\n\
+            NH90 TTH - 11pt\n\
+            Mi-8MTV2 - 11pt\n\
+            CH-53D - 13pt\n\
+            UH-60V - 13pt"
+   }
   ]
   },
   {
