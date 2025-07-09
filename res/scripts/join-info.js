@@ -73,7 +73,7 @@ const RULES_DATA = [
       {
         title: "Boj a chování se ve hře",
         desc: "Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ Při přestřelce se nesmí schovávat do safezóny.\n\n\ Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
-              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty. (odpovědnost nese vedení frakce).\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat."
+              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty, 6 zásobníků (včetně 1 ve zbrani), 10 bandáží a 10 tourniquetů. (odpovědnost nese vedení frakce).\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat."
       },
       {
         title: "Zákaz trollení a narušování RP",
@@ -106,8 +106,15 @@ const RULES_DATA = [
       {
         title: "Zabírání území",
         desc: "Na zabrání použijte příkaz /capture, kde vyplníte požadované informace (jaké území jste obsadili, která armáda ho obsadila, …).\n\n\ Na zabírání basepointů musíte být minimálně dva – jeden, který fotí, a druhý, který je vidět na fotce."
+      },
+      {
+        title: "Airdoropy",
+        desc: "= Dodání objednávky materiálu pomocí auta\n\n\
+              Dva typy:\n\
+              → Muniční - dodání munice (a zbraní za příplatek)\n\
+              → Zdravotní - dodání zdravotnického materiálu\n\
+              (Žádá se v ticketu obecný)"
       }
-
     ]
   },
   {
@@ -282,7 +289,8 @@ const RULES_DATA = [
    },
    {
      title: "Shop",
-     desc: "Pozemní vozidla:\n\ 4x4 - 4pt\n\
+     desc: "Pozemní vozidla:\n\
+            4x4 - 4pt\n\
             M1038 - 4pt\n\
             Pvp - 4pt\n\
             Humvee - 5pt\n\
@@ -300,7 +308,10 @@ const RULES_DATA = [
             NH90 TTH - 11pt\n\
             Mi-8MTV2 - 11pt\n\
             CH-53D - 13pt\n\
-            UH-60V - 13pt"
+            UH-60V - 13pt\n\n\
+            Jiné:\n\
+            Airdropy - cena podle toho co chcete\n\
+            (Žádá se v ticketu obecný)"
    }
   ]
   },
