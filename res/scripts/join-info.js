@@ -223,7 +223,7 @@ const RULES_DATA = [
       },
       {
         title: "CK | Character Kill",
-        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\Je zde několik druhů CK:\n\n\ → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\ → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\n\
+        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\ Je zde několik druhů CK:\n\n\ → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\ → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\n\
                → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\ → SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry."
       }
     ]
