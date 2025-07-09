@@ -67,8 +67,16 @@ const RULES_DATA = [
     rules: [
       {
         title: "Frakce a základny",
-        desc: " Nelze být ve více frakcích současně.\n\  Frakci můžete opustit pouze, pokud máte důvod.\n\  Neraidovat základny bez povolení v ticketu.\n\  Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
-               Max. počet není stanoven.\n\  Počty ve frakcích se můžou lišit max. o 4 lidi. \n\  Vybavení je předem dané.\n\  Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry."
+        desc: " Nelze být ve více frakcích současně.\n\
+        Frakci můžete opustit pouze, pokud máte důvod.\n\
+        Neraidovat základny bez povolení v ticketu.\n\
+        Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
+        Max. počet není stanoven.\n\
+        Počty ve frakcích se můžou lišit max. o 4 lidi.\n\
+        Vybavení je předem dané.\n\
+        Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry.\n\
+        Je doporučeno si ve frakci udělat nějakou hierarchii včetěně rozdělení na squady.\n\
+        Frakce musí mít minimálně velitele a jeho zástupce."
       },
       {
         title: "Boj a chování se ve hře",
