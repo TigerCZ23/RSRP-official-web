@@ -6,7 +6,8 @@
   --link: #2f00ff;
   --accent: #1e90ff;
   --accent-menu: #1e90ff;
-  --accent-h4-bg: #445464;
+  --accent-h4: #474747;
+  --accent-h4-bg: #9ab0c7;
   --accent-h2-ateam: #1e90ff;
   --thumb: #ffedde;
   --gallery-btn: #5c7187;
@@ -48,6 +49,7 @@
   --link: #1893ff;
   --accent: #5a3a3a;
   --accent-menu: #36555a;
+  --accent-h4: #e6dfd3;
   --accent-h4-bg: #0086a7;
   --accent-h2-ateam: #f4bcbc;
   --thumb: #0b0534;

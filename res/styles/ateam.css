@@ -59,7 +59,7 @@
 }
 
 .team-container h4 {
-    color: var(--accent);
+    color: var(--accent-h4);
     font-size: 1.25rem;
     font-weight: 800;
     margin: 32px 0 12px 0;
@@ -119,11 +119,10 @@
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .ateam-hero {
-        height: 60vh;
+        height: 42vh;
         background-attachment: scroll; /* Problémové na mobilech */
-        background-position-y: 0%;
         background-size: cover;
         padding: 20px;
     }
@@ -147,9 +146,12 @@
         margin: 0 7px;
     }
     .team-photo {
-        margin: 0 0 12px 0;
+        margin: 10px auto;
     }
     .team-info h3 {
         text-align: center;
+    }
+    .team-info p {
+        text-align: left;
     }
 }

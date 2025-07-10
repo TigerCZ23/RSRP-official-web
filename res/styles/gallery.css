@@ -51,7 +51,7 @@
   
 .modal-content {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   display: block;
   max-width: 90%;
   max-height: 80%;
@@ -184,12 +184,14 @@ button.next {
   }
 
   button.prev {
-    padding: 70px 15px;
+    padding: 70px 35px;
+    font-size: 32px;
     top: 75%;
   }
 
   button.next {
-    padding: 70px 15px;
+    padding: 70px 35px;
+    font-size: 32px;
     top: 75%;
   }
 
