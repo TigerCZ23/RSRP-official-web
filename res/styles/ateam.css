@@ -121,7 +121,11 @@
 
 @media (max-width: 700px) {
     .ateam-hero {
-        padding: 24px 6px;
+        height: 60vh;
+        background-attachment: scroll; /* Problémové na mobilech */
+        background-position-y: 0%;
+        background-size: cover;
+        padding: 20px;
     }
     .ateam-hero h1 {
         font-size: 1.7rem;

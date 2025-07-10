@@ -335,6 +335,14 @@ body.dark .rule-desc {
 }
 
 @media (max-width: 768px) {
+  .join-hero {
+    height: 60vh;
+    background-attachment: scroll; /* Problémové na mobilech */
+    background-position-y: 0%;
+    background-size: cover;
+    padding: 20px;
+  }
+
   .join-main {
     padding: 1rem 0.2rem 2rem 0.2rem;
   }
