@@ -304,7 +304,7 @@ const RULES_DATA = [
             M1038 - 4pt\n\
             Pvp - 4pt\n\
             Humvee - 5pt\n\
-            Srtv - 5pt + gamepass\n\
+            Srtv - 3pt + VIP\n\
             Tiger - 6pt\n\
             Vab - 6pt\n\
             Vbmr - 6pt\n\
