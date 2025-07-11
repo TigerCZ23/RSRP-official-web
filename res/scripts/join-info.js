@@ -81,7 +81,7 @@ const RULES_DATA = [
       {
         title: "Boj a chování se ve hře",
         desc: "Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ Při přestřelce se nesmí schovávat do safezóny.\n\n\ Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
-              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty, 6 zásobníků (včetně 1 ve zbrani), 5 bandáží a 5 dressingů. Jako zbraně 2 primary a 1 secondary (odpovědnost nese vedení frakce).\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat."
+              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty, 2 smoke granáty, do primary: 6 zásobníků (včetně 1 ve zbrani) a do secondary: 4 zásobníky (včetně jednoho ve zbrani), 5 bandáží a 5 dressingů. Jako zbraně 2 primary a 1 secondary (odpovědnost nese vedení frakce).\n\n\ Munice v krabicích (ne v zásobnících) smí být pouze v autě.\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat (ne na base)."
       },
       {
         title: "Zákaz trollení a narušování RP",
@@ -304,7 +304,7 @@ const RULES_DATA = [
             M1038 - 4pt\n\
             Pvp - 4pt\n\
             Humvee - 5pt\n\
-            Srtv - 5pt + gamepass\n\
+            Srtv - 3pt + VIP\n\
             Tiger - 6pt\n\
             Vab - 6pt\n\
             Vbmr - 6pt\n\
