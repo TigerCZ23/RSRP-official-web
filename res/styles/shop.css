@@ -87,7 +87,6 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: scale(1); /* Výchozí velikost */
 }
-
 .btn-buy:hover {
   background-color: #8a5b5b;
   transform: scale(1.07); /* Zvětšení o 5 % */
@@ -96,7 +95,7 @@
 
 .vip-card {
   flex: 0 0 100%;
-  padding: 15px 20px 70px; /* spodní padding kvůli tlačítku */
+  padding: 15px 20px 45px; /* spodní padding kvůli tlačítku */
   min-height: 300px;
   position: relative;
   text-align: center;
@@ -105,7 +104,7 @@
   background-color: var(--vip-card-bg);
   box-shadow: 0 -4px 10px var(--ateam-shadow);
 }
-.vip-card h3 {
+.vip-card, .vip-card-final h3 {
   color: var(--text-h3);
 }
 .vip-card ol {
@@ -117,6 +116,52 @@
 .vip-card ol li {
   color: var(--text);
   font-size: 18px;
+}
+.li-final {
+  margin-bottom: 20px;
+  color: var(--text);
+  font-size: 15px;
+}
+.p-price {
+  position: absolute;
+  left: 35px;
+  bottom: -10px;
+  font-size: 18px;
+  padding: 5px 12px;
+  color: var(--p-price);
+  background-color: var(--p-price-bg);
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: rgb(2, 27, 29);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.3s ease, color 0.3s ease;
+}
+.p-price:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 4px 8px rgba(247, 255, 2, 0.15);
+  background-color: var(--p-price);
+  color: var(--p-price-hover);
+}
+
+.vip-card-final {
+  min-height: 100px;
+  max-height: 230px;
+  min-width: 500px;
+  flex: 0 0 100%;
+  padding: 15px 20px 70px; /* spodní padding kvůli tlačítku */
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: var(--vip-card-bg);
+  box-shadow: 0 -4px 10px var(--ateam-shadow);
+}
+.vip-card-final ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 /* ===== HERO SECTION (PARALLAX) ===== */
@@ -161,8 +206,79 @@
   margin-bottom: 30px;
 }
 
+.shop-vip-hero1 {
+  position: relative;
+  height: 75vh;
+  background-image: url('./../images/vip_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-vip-hero1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: 1;
+}
+.shop-vip-hero1-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  margin-left: 75px;
+  color: var(--text);
+}
+.shop-vip-hero2 {
+  position: relative;
+  height: 75vh;
+  background-image: url('./../images/A10_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-vip-hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: 1;
+}
+.shop-vip-hero2-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  margin-left: 75px;
+  color: var(--text);
+}
+.shop-vip-hero1 h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.shop-vip-hero1 p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.shop-vip-hero2 h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.shop-vip-hero2 p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
-  .shop-hero {
+  .shop-hero, .shop-vip-hero1, .shop-vip-hero2 {
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
@@ -194,5 +310,11 @@
   }
   .vip-arrow.left {
     padding: 12.5px 100px 12.5px 25px;;
+  }
+
+  .vip-card-final {
+    min-width: 90%;
+    font-size: 18px;
+    padding: 10px 15px 60px;
   }
 }

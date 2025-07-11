@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../res/styles/mainstyle.css">
+  <link rel="stylesheet" href="./../res/styles/menu.css">
+  <link rel="stylesheet" href="./../res/styles/shop.css">
+  <title>RS:RP Ronograd State</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./../res/icons/logo.png" alt="logo" width="50" height="50">
+        <b>
+            <span style="font-size: 25px; font-family: 'Nunito', 'Arial', sans-serif; font-style: italic;">:RP Reborn</span>
+        </b>
+    </div>
+
+    <nav>
+        <ul id="nav-list">
+          <li><a href="main.html">Úvod</a></li>
+          <li><a href="about.html">O nás & Kontakt</a></li>
+          <li><a href="join-info.html">Informace & Pravidla</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="a-team.html">Tým</a></li>
+          <li><a style="text-decoration: underline;" href="shop.html">VIP | Shop</a></li>
+          <li><a href="https://discord.gg/Zrw6rqtzZs" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider">
+        <span class="thumb">
+          <img src="./../res/icons/sun.png" class="icon icon-sun" alt="Sun">
+          <img src="./../res/icons/moon.png" class="icon icon-moon" alt="Moon">
+        </span>
+      </span>
+    </label>
+  </header>
+
+  <section class="shop-vip-hero1 theme-image" data-offset="0" data-mobileoffset="0"> <!-- Paralax tu není -->
+    <div class="shop-vip-hero-overlay"></div>
+  <section class="vip-carousel-wrapper">
+
+    <div class="vip-carousel">
+      <div class="vip-track" id="vip-track">
+        <div class="vip-card-final">
+          <h3>Základní VIP | 1 [month]</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Začni si užívat výhody VIP ještě dnes.</p>
+          <ol>
+            <li class="li-final">Zkus na měsíc a uvidíš, že nechceš zpět.</li>
+          </ol>
+          <p class="p-price">75⏣</p>
+          <a href="https://www.roblox.com/catalog/18632679170/RS-RP-VIP-1-month" class="btn-buy">Koupit</a>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <section class="vip-carousel-wrapper">
+
+    <div class="vip-carousel">
+      <div class="vip-track" id="vip-track">
+        <div class="vip-card-final">
+          <h3>Základní VIP | 1 [year]</h3>
+          <p style="color: var(--text); margin-bottom: 10px;">Měsíc nebo rok? Výhody VIP jsou vždy tvoje.</p>
+          <ol>
+            <li class="li-final">Zaplať jednou a ušetři 20 % oproti měsíčnímu placení.</li>
+          </ol>
+          <p class="p-price">600⏣</p>
+          <a href="https://www.roblox.com/catalog/99188868981203/RS-RP-VIP-1-Year" class="btn-buy">Koupit</a>
+        </div>
+      </div>
+    </div>
+
+    </section>
+  </section>
+
+  <footer>
+    <p>© 2025 RS:RP | <a href="about.html">Kontakt</a></p>
+  </footer>
+
+  <script src="./../res/scripts/core.js"></script>
+</body>
+</html>

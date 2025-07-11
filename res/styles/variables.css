@@ -39,6 +39,9 @@
   --btn-buy: #22c55e;
   --btn-buy-hover: #15803d;
   --vip-card-bg: #c4c4c4;
+  --p-price: #fff759;
+  --p-price-hover: #131111;
+  --p-price-bg: #aeaeae;
 }
 
 [data-theme="dark"] {
@@ -75,4 +78,7 @@
   --btn-buy: #22c55e;
   --btn-buy-hover: #15803d;
   --vip-card-bg: #18191c;
+  --p-price: #bcb750;
+  --p-price-hover: #131111;
+  --p-price-bg: #35303e;
 }
