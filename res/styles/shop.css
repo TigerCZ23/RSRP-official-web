@@ -93,35 +93,48 @@
   background-color: var(--btn-buy-hover);
 }
 
-.vip-card {
+/* ===== VIP CARD ===== */
+.vip-card,
+.vip-card-final {
   flex: 0 0 100%;
-  padding: 15px 20px 45px; /* spodní padding kvůli tlačítku */
-  min-height: 300px;
+  padding: 15px 20px 45px;
   position: relative;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   background-color: var(--vip-card-bg);
   box-shadow: 0 -4px 10px var(--ateam-shadow);
-}
-.vip-card, .vip-card-final h3 {
   color: var(--text-h3);
 }
-.vip-card ol {
+.vip-card-final {
+  min-height: 100px;
+  max-height: 230px;
+  min-width: 500px;
+  padding-bottom: 70px;
+}
+
+.vip-card ol,
+.vip-card-final ol {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
 }
-.vip-card ol li {
+.vip-card h3, .vip-card-final  h3 {
+  color: var(--text-h3);
+  transition: color 0.3s ease;
+}
+.vip-card ol li,
+.li-final {
   color: var(--text);
   font-size: 18px;
 }
 .li-final {
   margin-bottom: 20px;
-  color: var(--text);
   font-size: 15px;
 }
+
+/* ===== PRICE BADGE ===== */
 .p-price {
   position: absolute;
   left: 35px;
@@ -130,10 +143,8 @@
   padding: 5px 12px;
   color: var(--p-price);
   background-color: var(--p-price-bg);
+  border: 2px dashed rgb(2, 27, 29);
   border-radius: 12px;
-  border-width: 2px;
-  border-style: dashed;
-  border-color: rgb(2, 27, 29);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.3s ease, color 0.3s ease;
 }
@@ -144,98 +155,12 @@
   color: var(--p-price-hover);
 }
 
-.vip-card-final {
-  min-height: 100px;
-  max-height: 230px;
-  min-width: 500px;
-  flex: 0 0 100%;
-  padding: 15px 20px 70px; /* spodní padding kvůli tlačítku */
-  position: relative;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  background-color: var(--vip-card-bg);
-  box-shadow: 0 -4px 10px var(--ateam-shadow);
-}
-.vip-card-final ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
 /* ===== HERO SECTION (PARALLAX) ===== */
-.shop-hero {
-  position: relative;
-  height: 75vh;
-  background-image: url('./../images/vip_bg1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.shop-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
-  z-index: 1;
-}
-
-.shop-hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-  margin-left: 75px;
-  color: var(--text);
-}
-
-.shop-hero h1 {
-  color: aliceblue;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.shop-hero p {
-  color: aliceblue;
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.shop-vip-hero1 {
-  position: relative;
-  height: 75vh;
-  background-image: url('./../images/vip_bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.shop-vip-hero1::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
-  z-index: 1;
-}
-.shop-vip-hero1-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-  margin-left: 75px;
-  color: var(--text);
-}
+.shop-hero,
+.shop-vip-hero1,
 .shop-vip-hero2 {
   position: relative;
   height: 75vh;
-  background-image: url('./../images/A10_2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -243,13 +168,18 @@
   align-items: center;
   justify-content: center;
 }
+.shop-hero::before,
+.shop-vip-hero1::before,
 .shop-vip-hero2::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+.shop-hero-content,
+.shop-vip-hero1-content,
 .shop-vip-hero2-content {
   position: relative;
   z-index: 2;
@@ -258,24 +188,37 @@
   margin-left: 75px;
   color: var(--text);
 }
-.shop-vip-hero1 h1 {
+.shop-hero h1 {
   color: aliceblue;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
-.shop-vip-hero1 p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
+.shop-vip-hero1 h1,
 .shop-vip-hero2 h1 {
-  color: aliceblue;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
+.shop-hero p {
+  color: aliceblue;
+}
+.shop-hero p,
+.shop-vip-hero1 p,
 .shop-vip-hero2 p {
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
+
+/* Specifické pozadí */
+.shop-hero {
+  background-image: url('./../images/vip_bg1.jpg');
+}
+.shop-vip-hero1 {
+  background-image: url('./../images/vip_bg.jpg');
+}
+.shop-vip-hero2 {
+  background-image: url('./../images/A10_2.jpg');
+}
+
 
 @media (max-width: 768px) {
   .shop-hero, .shop-vip-hero1, .shop-vip-hero2 {
