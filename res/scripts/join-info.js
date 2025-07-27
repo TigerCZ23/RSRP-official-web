@@ -16,16 +16,16 @@ const RULES_DATA = [
         desc: "Spamování zpráv, obrázků nebo jiného obsahu je zakázáno a může vést k trestům."
       },
       {
-        title: "Zákaz cheatů, exploitů a zneužívání herních chyb",
-        desc: "Používání cheatů, exploitů nebo zneužívání herních chyb je zakázáno a povede k trestům. Pokud najdeš chybu, nahlas ji administrátorům."
+        title: "Zákaz cheatů, exploitů a zneužívání herních bugů",
+        desc: "Používání cheatů, exploitů nebo zneužívání herních bugů je zakázáno a povede k trestům. Pokud najdeš chybu, nahlaš to administrátorům."
       },
       {
         title: "Právo zásahu člena AT",
-        desc: "Člen administrátorského týmu má právo udělit mute, warn nebo ban i za prohřešky, které nejsou výslovně uvedeny v pravidlech, pokud to uzná za vhodné k zachování pořádku a pravidel serveru."
+        desc: "Člen administrátorského týmu má právo udělit mute, warn nebo ban i za prohřešky, které nejsou výslovně uvedeny v pravidlech, pokud to uzná za vhodné, k zachování pořádku a pravidel serveru."
       },
       {
         title: "Dodržuj pravidla",
-        desc: "Každý hráč je povinen dodržovat pravidla serveru a chovat se slušně k ostatním hráčům. Porušení pravidel může vést k varování, dočasnému nebo trvalému vyloučení ze serveru. Neznalost pravidel neomlouvá jejich porušení a hledání chyb/mezer v pravidlech není důvodem k jejich porušení."
+        desc: "Každý hráč je povinen dodržovat pravidla serveru a chovat se slušně k ostatním hráčům. Porušení pravidel může vést k warnu, dočasnému nebo trvalému banu ze serveru. Neznalost pravidel neomlouvá jejich porušení a hledání chyb/mezer v pravidlech není důvodem k jejich porušení."
       },
       {
         title: "Obecná zodpovědnost",
@@ -38,27 +38,27 @@ const RULES_DATA = [
     rules: [
       {
         title: "Dodržujte Discord TOS (pravidla platformy).",
-        desc: "Používání Discordu je povoleno pouze v souladu s pravidly platformy. Jakékoliv porušení TOS může vést k trestům na serveru a nahlášení moderátorům discordu."
+        desc: "→ Používání Discordu je povoleno pouze v souladu s pravidly platformy.\n\ → Jakékoliv porušení TOS může vést k trestům na serveru a nahlášení moderátorům Discordu."
       },
       {
         title: "Ochrana osobních údajů",
-        desc: "Zákaz sdílení osobních informací jiných uživatelů bez jejich výslovného souhlasu. To zahrnuje jména, adresy, telefonní čísla, e-maily a další citlivé údaje."
+        desc: "→ Zákaz sdílení osobních informací jiných uživatelů bez jejich výslovného souhlasu.To zahrnuje jména, adresy, telefonní čísla, e-maily a další citlivé údaje."
       },
       {
         title: "Zneužívání ticket systému",
-        desc: "Nezneužívejte ticket systém (např. spamování, nesmyslné požadavky, opakované zakládání bezdůvodných ticketů)."
+        desc: "→ Nezneužívejte ticket systém (např. spamování, nesmyslné požadavky, opakované zakládání bezdůvodných ticketů).\n\ → Zatěžuje to bota, Discord server a hlavně náš časově vytížený A-Team."
       },
       {
         title: "Mluvte ve správných kanálech",
-        desc: "Dodržujte témata jednotlivých kanálů. Příspěvky mimo téma mohou být smazány a při opakování může následovat mute."
+        desc: "→ Dodržujte témata jednotlivých kanálů.\n\ → Příspěvky mimo téma mohou být smazány a při opakování může následovat mute."
       },
       {
         title: "Zákaz nevhodného obsahu",
-        desc: "Je přísně zakázán jakýkoliv rasistický, nacistický nebo NSFW (nevhodný) obsah. Porušení tohoto pravidla může vést k okamžitému banu."
+        desc: "Je přísně zakázán jakýkoliv rasistický, nacistický, komunistický nebo NSFW (nevhodný) obsah.\n\ → Porušení tohoto pravidla může vést k okamžitému banu."
       },
       {
         title: "Zákaz falešných reportů",
-        desc: "Je zakázáno podávat falešné reporty nebo obviňovat jiné hráče bez dostatečných důkazů. Zneužívání report systému může vést k trestu."
+        desc: "Je zakázáno podávat falešné reporty nebo obviňovat jiné hráče bez dostatečných důkazů.\n\ → Zneužívání report systému povede k trestu."
       }
     ]
   },
@@ -67,53 +67,53 @@ const RULES_DATA = [
     rules: [
       {
         title: "Frakce a základny",
-        desc: " Nelze být ve více frakcích současně.\n\
-        Frakci můžete opustit pouze, pokud máte důvod.\n\
-        Neraidovat základny bez povolení v ticketu.\n\
-        Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
-        Max. počet není stanoven.\n\
-        Počty ve frakcích se můžou lišit max. o 4 lidi.\n\
-        Vybavení je předem dané.\n\
-        Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry.\n\
-        Je doporučeno si ve frakci udělat nějakou hierarchii včetěně rozdělení na squady.\n\
-        Frakce musí mít minimálně velitele a jeho zástupce."
+        desc: " → Nelze být ve více frakcích současně.\n\
+        → Frakci můžete opustit pouze, pokud máte důvod.\n\
+        → Neraidovat základny bez povolení v ticketu.\n\
+        → Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
+        → Maximální počet členů není stanoven.\n\
+        → Počty ve frakcích se můžou lišit max. o 4 lidi.\n\
+        → Vybavení je předem dané a schválené A-Teamem.\n\
+        → Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry.\n\
+        → Je doporučeno si ve frakci udělat nějakou hierarchii (včetěně rozdělení na squady).\n\
+        → Frakce musí mít velitele a jeho zástupce."
       },
       {
         title: "Boj a chování se ve hře",
-        desc: "Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\n\ Při přestřelce se nesmí schovávat do safezóny.\n\n\ Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\
-              Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\n\ Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\ Hráč u sebe může mít maximálně 3 frag granáty, 2 smoke granáty, do primary: 6 zásobníků (včetně 1 ve zbrani) a do secondary: 4 zásobníky (včetně jednoho ve zbrani), 5 bandáží a 5 dressingů. Jako zbraně 2 primary a 1 secondary (odpovědnost nese vedení frakce).\n\n\ Munice v krabicích (ne v zásobnících) smí být pouze v autě.\n\n\ Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ Opuštěná vozidla se budou kadžých 15 - 30 minut mazat (ne na base)."
+        desc: "→ Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\ → Při přestřelce se nesmí schovávat do safezóny.\n\n\ → Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\ → Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\
+              → Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\ → Hráč u sebe může mít maximálně 3 frag granáty, 2 smoke granáty, do primary: 6 zásobníků (včetně 1 ve zbrani), do secondary: 4 zásobníky (včetně jednoho ve zbrani), 5 bandáží a 5 dressingů (odpovědnost nese vedení frakce).\n\ → Zbraně: 2 primary a 1 secondary (odpovědnost nese vedení frakce).\n\n\ → Munice v krabicích (ne v zásobnících) smí být pouze v autě.\n\n\ → Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ → Opuštěná vozidla se budou kadžých 15 - 30 minut mazat (ne na base)."
       },
       {
         title: "Zákaz trollení a narušování RP",
-        desc: "Nesmíte trollit ani jinak úmyslně narušovat nebo kazit roleplay ostatním hráčům. Dbejte na to, aby vaše chování nenarušovalo herní zážitek ostatních."
+        desc: "→ Nesmíte trollit ani jinak úmyslně narušovat nebo kazit roleplay ostatním hráčům.\n\ → Dbejte na to, aby vaše chování nenarušovalo herní zážitek ostatních."
       },
       {
         title: "Zákaz opuštění základny",
-        desc: "Nesmíte opustit základnu nebo bezpečnou zónu (safe zone), dokud není oznámeno RP ON."
+        desc: "→ Nesmíte opustit základnu nebo bezpečnou zónu (safe zone), dokud není oznámeno RP ON."
       },
       {
         title: "Zákaz RDM/VDM",
-        desc: "Random Deathmatch (RDM) a Vehicle Deathmatch (VDM) jsou zakázány. Každý útok musí mít RP důvod."
+        desc: "→ Random Deathmatch (RDM) a Vehicle Deathmatch (VDM) jsou zakázány. Každý útok musí mít RP důvod."
       },
       {
         title: "Spawn na FOB",
-        desc: "Spawn na FOB je možný jen na začátku SSU."
+        desc: "→ Spawn na FOB je možný jen na začátku SSU."
       },
       {
         title: "Krádež vybavení",
-        desc: "Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu.\n\n\ V průběhu SSU je zakázáno si měnit výbavu (nevztahuje se ke kradenému vybavení)."
+        desc: "→ Z hráčů lze ukrást max. 1 část výbavy, frakce si ji může ponechat po žádosti v ticketu.\n\n\ → V průběhu SSU je zakázáno si měnit výbavu (nevztahuje se ke kradenému vybavení)."
       },
       {
         title: "Zákaz vitamínů",
-        desc: "Zákaz používání a držení (v inventáři) vitamínů."
+        desc: "→ Zákaz používání a držení (v inventáři) vitamínů."
       },
       {
         title: "Death screen & revive",
-        desc: "Nesmíte se resetovat v \"death screenu\", musíte vyčkat na vykrvácení a poté vás hra respawne. Pokud jste ošetřeni jiným hráčem, tak si musíte lehnout, protože stále krvácíte. Když vás kdokoliv oživí, tak musíte doRPit ošetřování (podle pravidla RP Injuries)."
+        desc: "→ Nesmíte se resetovat v \"death screenu\", musíte vyčkat na vykrvácení a poté vás hra respawne.\n\ → Pokud jste ošetřeni jiným hráčem, tak si musíte lehnout, protože stále krvácíte.\n\ → Když vás kdokoliv oživí, tak musíte doRPit ošetřování (podle pravidla RP Injuries)."
       },
       {
         title: "Zabírání území",
-        desc: "Na zabrání použijte příkaz /capture, kde vyplníte požadované informace (jaké území jste obsadili, která armáda ho obsadila, …).\n\n\ Na zabírání basepointů musíte být minimálně dva – jeden, který fotí, a druhý, který je vidět na fotce."
+        desc: "→ Na zabrání použijte příkaz /capture, kde vyplníte požadované informace (jaké území jste obsadili, která armáda ho obsadila, …).\n\n\ → Na zabírání basepointů musíte být minimálně dva – jeden, který fotí, a druhý, který je vidět na fotce."
       },
       {
         title: "Airdoropy",
