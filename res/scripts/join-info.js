@@ -213,23 +213,23 @@ const RULES_DATA = [
       },
       {
         title: "Unášení lidí | Kidnapp RP",
-        desc: "Z jedné frakce smíte unést pouze 3 lidi za SSU.\n\n\
-              → Člena jiné frakce nesmíte držet déle než 45 min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\n\
-              → Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu, atd...).\n\n\
-              → Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci (neplatí pro teroristy).\n\n\
+        desc: "→ Z jedné frakce smíte unést pouze 3 lidi za SSU.\n\
+              → Člena jiné frakce nesmíte držet déle než 45 min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\
+              → Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu/...).\n\
+              → Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci.\n\
               → Z hráčů se může krást výbava (max. 1 část) - frakce si ji může ponechat po dobu trvání SSU, nebo ji může prodat u obchodníka."
       },
       {
         title: "Pravidla pro raidy",
-        desc: "Během raidu můžete ukrást maximálně **3 vozidla** a převzít **odměnu**: buď **polovinu PT z jejich celkové ceny** (v případě lichých čísel se zaokrouhluje dolů), nebo **polovinu PT**, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
-              Útočníci se spawnují na své základně, ale **jakmile zemřou, nesmí se vracet zpět do konfliktu**.\n\n\
-              Spawn obránců je **přesunut na neutrální, vzdálené místo**, aby se nemohli okamžitě vracet na svou základnu.\n\n\
-              Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
-              **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
-              Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
-              Raid je možné provést až na následujícím SSU od schválení ticketu. (Neurčí-li člen AT jinak)\n\n\
-              Pro raid musíte také IC vědět, kde se nachází základna nepřítele.\n\n\
-              Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
+        desc: "→ Během raidu můžete ukrást maximálně 3 vozidla a převzít odměnu: buď polovinu PT z jejich celkové ceny (v případě lichých čísel se zaokrouhluje dolů), nebo polovinu PT, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
+              → Útočníci se spawnují na své základně, ale jakmile zemřou, nesmí se vracet zpět do konfliktu.\n\
+              → Spawn obránců je přesunut na vzdálené místo, aby se nemohli okamžitě vracet na svou základnu.\n\
+              → Díky tomuto systému se lépe rozhodne, která strana byla v raidu úspěšná. \n\ → Pokud útočící strana prohraje, nedostane odměnu žádnou.\n\n\
+              → Na základně musí být alespoň 1 hráč (neunesený, nevydíraný), nebo frakce musí mít alespoň 5 aktivních členů, jinak nelze raid provést.\n\n\
+              → Raid je možný pouze po schválení ticketu s minimálně 3 smysluplnými důvody a důkazním materiálem, které musí potvrdit AT.\n\n\
+              → Raid je možné provést až na následujícím SSU od schválení ticketu (neurčí-li člen AT jinak).\n\n\
+              → Pro raid musíte IC vědět, kde se nachází základna nepřítele.\n\n\
+              → Abyste mohli zahájit střelbu na cizí základnu, musíte mít schválený raid ticket (pokud první výstřel nepřišel od nepřítele z dané base - v tom případě můžete opětovat palbu bez ticketu, ale musíte se začít postupně stahovat z oblasti jejich základny)."
       }
     ]
   },
