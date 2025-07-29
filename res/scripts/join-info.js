@@ -187,43 +187,49 @@ const RULES_DATA = [
     rules: [
       {
         title: "KOS | Kill on Sight",
-        desc: "KOS je situace, kdy je hráč zabit bez varování nebo předchozí interakce. Toto pravidlo platí pro všechny hráče a frakce. KOS je povolen pouze v případě, že hráč nebo frakce má oprávněný důvod k zabití.\n\n\
-              → Před tím, než začnete střílet, si musíte být 100% jisti/y, že to je člen nepřátelské frakce\n\
-              Pokud vidíte někoho, o kom v OOC víte, že je např. terorista, ale v IC ne, tak s ním musíte zacházet tak, jako s civilistou do té doby, než se vaše postava v IC dozví, že opravdu je terorista"
+        desc: "= situace, kdy je hráč zabit bez varování nebo předchozí interakce \n\n\
+              → Toto pravidlo platí pro všechny hráče a frakce. \n\
+              → KOS je povolen pouze v případě, že hráč nebo frakce má oprávněný důvod k zabití.\n\n\
+              → Před tím, než začnete střílet, si musíte být 100% jist/a, že to je člen nepřátelské frakce\n\
+              → Pokud vidíte někoho, o kom v OOC víte, že je členem nepřátelské frakce, ale v IC ne, tak s ním musíte zacházet jako s civilistou do doby, než se vaše postava v IC dozví, že opravdu členem nepřátelské frakce je."
       },
       {
         title: "RP Combat | RPC",
         desc: "= pravidlo, které zakazuje hráči jakýmkoliv způsobem kazit RP tím, že bude např. při přestřelce provádět bunny hopping, nerealisticky se hýbat či skákat atd...\n\n\
-               Toto pravidlo platí, pokud je hráč v combatu/drží v ruce zbraň.\n\  Pokud se hráč pohybuje nerealisticky, může být trestán administrátorským týmem."
+              → Toto pravidlo platí, pokud je hráč v combatu/drží v ruce zbraň.\n\
+              → Pokud se hráč pohybuje nerealisticky, může být trestán A-Týmem."
       },
       {
         title: "Combat log",
-        desc: " Combat log = odpojení z RP Akce (např. když je kropení/raid na vaší frakci, atd...)\n\n\
-               Pokud dáte vědět oběma stranám, že musíte odejít, combat log se nepočítá (u únosu se při dalším připojení do hry musíte vrátit s frakcí a únos doRPit)\n\n\
-               Pokud se vaše celá frakce (i jen např. 80%) u RP akce odpojí a všichni si i přesto napíšou důvod, může se to stále brát, jako obcházení pravidla, tudíž pravidlo platí"
+        desc: "= odpojení z RP Akce (např. když je kropení/raid na vaší frakci, ...)\n\n\
+              → Pokud dáte vědět oběma stranám, že musíte odejít, combat log se nepočítá (u únosu se při dalším připojení do hry musíte vrátit s frakcí a únos doRPit).\n\n\
+              → Pokud se vaše celá frakce (i jen např. 80%) u RP akce odpojí a všichni si i přesto napíšou důvod, může se to stále brát, jako obcházení pravidla, tudíž pravidlo platí."
       },
       {
         title: "Combat Comeback",
-        desc: " Nesmíte se opakovaně vracet do přestřelky, ve které jste zemřeli\n\n\
-               Pokud se bojuje o nějaký basepoint nebo podobné systémy na serveru, máte 5min cooldown, pak se můžete vrátit zpět do RP akce či její blízkosti, abyste mohli zaútočit\n\n\
-               Když se kropí na jediné cestě k vaší base, kde jste byly pokropeni, počkejte nějakou dobu a druhý team by nadále cestu neměl campit (navazuje na Herní pravidlo Frakce a základny)"
+        desc: "= nesmíte se opakovaně vracet do přestřelky, ve které jste zemřeli\n\n\
+              → Pokud se bojuje o nějaký basepoint (nebo podobné systémy na serveru), máte 5 minut cooldown, pak se můžete vrátit zpět do RP akce či její blízkosti, abyste mohli zaútočit.\n\n\
+              → Když se kropí na jediné cestě k vaší base, kde jste byly zabiti, počkejte nějakou dobu a druhý team by nadále cestu neměl campit (navazuje na Herní pravidlo Frakce a základny)"
       },
       {
         title: "Unášení lidí | Kidnapp RP",
-        desc: " Z jedné frakce smíte unést pouze 3 lidi za SSU.\n\n\ → Člena jiné frakce nesmíte držet déle než 45 min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\n\  Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu, atd...).\n\n\
-               Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci (neplatí pro teroristy).\n\n\  Z hráčů se může krást výbava (max. 1 část) - frakce si ji může ponechat po dobu trvání SSU, nebo ji může prodat u obchodníka."
+        desc: "Z jedné frakce smíte unést pouze 3 lidi za SSU.\n\n\
+              → Člena jiné frakce nesmíte držet déle než 45 min (pokud unesený člen OOC souhlasí s prodloužením RP akce únosu, tak můžete akci prodloužit).\n\n\
+              → Pokud chcete někoho unést, musíte s ním mít nějakou RP akci (meet/přestřelku v blízkosti/povídání delší dobu, atd...).\n\n\
+              → Členy jiných frakcí můžete unést pouze s důvodem a musíte 100% vědět , že jde o nepřátelskou frakci (neplatí pro teroristy).\n\n\
+              → Z hráčů se může krást výbava (max. 1 část) - frakce si ji může ponechat po dobu trvání SSU, nebo ji může prodat u obchodníka."
       },
       {
         title: "Pravidla pro raidy",
-        desc: " Během raidu můžete ukrást maximálně **3 vozidla** a převzít **odměnu**: buď **polovinu PT z jejich celkové ceny** (v případě lichých čísel se zaokrouhluje dolů), nebo **polovinu PT**, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
-               Útočníci se spawnují na své základně, ale **jakmile zemřou, nesmí se vracet zpět do konfliktu**.\n\n\
-               Spawn obránců je **přesunut na neutrální, vzdálené místo**, aby se nemohli okamžitě vracet na svou základnu.\n\n\
-               Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
-               **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
-               Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
-               Raid je možné provést až na následujícím SSU od schválení ticketu. (Neurčí-li člen AT jinak)\n\n\
-               Pro raid musíte také IC vědět, kde se nachází základna nepřítele.\n\n\
-               Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
+        desc: "Během raidu můžete ukrást maximálně **3 vozidla** a převzít **odměnu**: buď **polovinu PT z jejich celkové ceny** (v případě lichých čísel se zaokrouhluje dolů), nebo **polovinu PT**, kterou armáda právě má (min. 6 PT, max. 15 PT).\n\n\
+              Útočníci se spawnují na své základně, ale **jakmile zemřou, nesmí se vracet zpět do konfliktu**.\n\n\
+              Spawn obránců je **přesunut na neutrální, vzdálené místo**, aby se nemohli okamžitě vracet na svou základnu.\n\n\
+              Díky tomuto systému se lépe **rozhodne, která strana byla v raidu úspěšná**. Pokud útočící strana prohraje, **nedostane žádnou odměnu**.\n\n\
+              **Na základně musí být alespoň 1 hráč** (neunesený, nevydíraný), **nebo frakce musí mít alespoň 5 aktivních členů**, jinak nelze raid provést.\n\n\
+              Raid je možný pouze po **schválení ticketu** s **minimálně 3 smysluplnými důvody** a **důkazním materiálem**, které musí potvrdit AT.\n\n\
+              Raid je možné provést až na následujícím SSU od schválení ticketu. (Neurčí-li člen AT jinak)\n\n\
+              Pro raid musíte také IC vědět, kde se nachází základna nepřítele.\n\n\
+              Abyste mohli **zahájit střelbu na cizí základnu**, musíte mít schválený **raid ticket**. Výjimkou je, pokud **první vystřelí nepřítel z jejich base** – v tom případě můžete opětovat palbu **bez ticketu**, ale musíte se **postupně stahovat z oblasti jejich základny**."
       }
     ]
   },
