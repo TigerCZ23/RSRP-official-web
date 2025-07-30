@@ -66,19 +66,6 @@ const RULES_DATA = [
     category: "Herní pravidla",
     rules: [
       {
-        title: "Frakce a základny",
-        desc: " → Nelze být ve více frakcích současně.\n\
-        → Frakci můžete opustit pouze, pokud máte důvod.\n\
-        → Neraidovat základny bez povolení v ticketu.\n\
-        → Frakce může za SSU ukradnout pouze 2 vozidla (při raidu 4).\n\n\
-        → Maximální počet členů není stanoven.\n\
-        → Počty ve frakcích se můžou lišit max. o 4 lidi.\n\
-        → Vybavení je předem dané a schválené A-Teamem.\n\
-        → Frakce zabírají jednotlivé body a mohou vytvářet menší checkpointy nebo bariéry.\n\
-        → Je doporučeno si ve frakci udělat nějakou hierarchii (včetěně rozdělení na squady).\n\
-        → Frakce musí mít velitele a jeho zástupce."
-      },
-      {
         title: "Boj a chování se ve hře",
         desc: "→ Zákaz poškozování hráčů na FOB (střelba, granáty apod.).\n\ → Při přestřelce se nesmí schovávat do safezóny.\n\n\ → Nesmíte campit jednu část mapy za účelem zabíjení projíždějících hráčů (výjimka při hrozbě raidu).\n\n\ → Zákaz bunny hoppingu během přestřelek a jiných RP akcí.\n\n\
               → Assault zbraně mohou mít max. 6x scope - používejte realistické vybavení.\n\ → Hráč u sebe může mít maximálně 3 frag granáty, 2 smoke granáty, do primary: 6 zásobníků (včetně 1 ve zbrani), do secondary: 4 zásobníky (včetně jednoho ve zbrani), 5 bandáží a 5 dressingů (odpovědnost nese vedení frakce).\n\ → Zbraně: 2 primary a 1 secondary (odpovědnost nese vedení frakce).\n\n\ → Munice v krabicích (ne v zásobnících) smí být pouze v autě.\n\n\ → Nesmíte se pohybovat na těchto lokacích: Depot, DOU\n\n\ → Opuštěná vozidla se budou kadžých 15 - 30 minut mazat (ne na base)."
@@ -243,15 +230,15 @@ const RULES_DATA = [
       },
       {
         title: "NVL | Not Valuing Life",
-        desc: "NVL = Nevážení si vlastního života herní postavy\n\n\ Příklad:\n\ → Člověk v běžném životě nepoběží na místo, na kterém se po něm střílí nebo se jen tak nenechá přejet či odpálit vlastním granátem."
+        desc: "= Nevážení si vlastního života herní postavy\n\n\ Příklad:\n\ → Člověk v běžném životě nepoběží na místo, kde se po něm střílí nebo se jen tak nenechá přejet či odpálit vlastním granátem."
       },
       {
         title: "PK | Player Kill",
-        desc: " PK = zapomenutí RP akce od jejíího začátku.\n\n\  PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (víc jak 5 minut).\n\  FullPK zde není."
+        desc: "= zapomenutí RP akce od jejíího začátku.\n\n\ → PK můžete někomu udělit, když je v death screenu a proběhla delší RP akce (více jak 5 minut).\n\ → FullPK zde není."
       },
       {
         title: "CK | Character Kill",
-        desc: "Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\Je zde několik druhů CK:\n\n\
+        desc: "= úplná smrt postavy, po které tato postava přestává naprosto existovat \n\n\ → Když vám někdo dá CK, můžete jít do stejné frakce až za 8 SSU.\n\n\ Je zde několik druhů CK:\n\
               → SelfCK = Vaše postava se zabila/zabije, píše se do ticketu.\n\
               → MemberCK = Nejvyšší role ve frakci vás může zabít bez vypsání ticketu s dobrým důvodem\n\ (porušením pravidel frakce, platí i odpojení frakčního DC bez povolení)\n\
               → NormalCK = Na někoho si vypíšete CK skrze CK-ticket\n\  SituationCK = CK, které dostanete v případě nějaké nehody helikoptéry."
@@ -263,21 +250,21 @@ const RULES_DATA = [
     rules: [
       {
         title: "Mixing",
-        desc: " Míchání vašich OOC vědomostí/vlastností do IC charakteru.\n\
-        Příklad:\n\ → Jinému hráči v IC řeknete: ''Podívej se do dms, něco jsem ti tam poslal.''\n\  Jako porušení tohoto pravidla se počítá i IC oslovení nonRP jménem/přezdívkou."
+        desc: "= míchání vašich OOC vědomostí/vlastností do IC charakteru\n\
+        Příklad:\n\ → Jinému hráči v IC řeknete: ''Podívej se do dms, něco jsem ti tam poslal.''\n\n\ → Jako porušení tohoto pravidla se počítá i IC oslovení nonRP jménem/přezdívkou."
       },
       {
         title: "Metagaming",
-        desc: " Metagaming je získávání informací jinak než herním způsobem (IC).\n\  Je zakázané i pobízení ostatních hráčů k Metagamingu!\n\n\
-              Příklad:\n\ → Sdílení informací na Discordu a jejich následné využití ve hře.\n\ → Nabádání k Metagamingu:\n\
-              1. Posílání nevyžádaných IC informací v OOC (sdílení obrazovky na Discordu).\n\ 2. Vyžadování IC informací OOC."
+        desc: "= získávání informací jinak než herním způsobem - IC.\n\n\ → Je zakázané i pobízení ostatních hráčů k Metagamingu!\n\n\
+              Příklad:\n\ → Sdílení informací na Discordu a jejich následné využití ve hře.\n\
+              → Posílání nevyžádaných IC informací v OOC (sdílení obrazovky na Discordu).\n\ → Vyžadování IC informací OOC."
       },
       {
         title: "Radio RP",
-        desc: " Zakazuje hráčům používat in-game radio/vysílačku, pokud jim byla odebrána nebo ji nemají u sebe - na vestě/batohu (musí být vizuálně vidět).\n\n\
-               Dále je zakázáno vyhledávat a zkoušet náhodné frekvence za cílem najít nepřátelskou vysílačku, a tím získat výhodu.\n\n\
-               Jediný způsob, jak získat odposlech nepřátelské vysílačky, je získat vysílačku/frekvenci od nějakého člena z nepřátelské frakce.\n\n\
-               Během SSU frakce mohou libovolně měnit své frekvence. Pokud dojde k nalezení frekvence, kterou už nějaká frakce používá, tak se přelaďte na jinou frekvenci a zároveň informujte frakci, že jste omylem naladili jejich frekvenci."
+        desc: "= pravidlo, které zakazuje hráčům používat in-game radio/vysílačku, pokud jim byla odebrána nebo ji nemají u sebe - na vestě/batohu (musí být vizuálně vidět).\n\n\
+               → Je zakázáno vyhledávat a zkoušet náhodné frekvence za cílem najít nepřátelskou vysílačku, a tím získat výhodu.\n\
+               → Jediný způsob, jak získat odposlech nepřátelské vysílačky, je získat vysílačku/frekvenci od nějakého člena z nepřátelské frakce.\n\
+               → Během SSU frakce mohou libovolně měnit své frekvence.\n\ → Pokud dojde k nalezení frekvence, kterou už nějaká frakce používá, tak se přelaďte na jinou frekvenci a zároveň informujte frakci, že jste omylem naladili jejich frekvenci."
       }
     ]
   },
@@ -286,26 +273,35 @@ const RULES_DATA = [
     rules: [
       {
         title: "Gross RP",
-        desc: " Jedná se o nechutné RP, jako je tvrdé mučení.\n\n\  Bez vypsání CK nemůžete oběti řezat končetiny nebo udělat stálé následky (řezání je povolené).\n\n\  Na gross se musíte ptát každého, kdo je přítomen v okolí grossu. Když přijde někdo nový k RP akci, musí se gross pozastavit a všichni ho opět povolit.\n\n\
-               Všichni v daném voice callu a v dané RP akci gross musí povolit, pokud jeden člověk zamítne, tak se gross nesmí konat.\n\n\ Sexuální gross může být povolen, pokud všem osobám bylo OOC 15 a více let."
+        desc: "= nechutné RP, jako je např. tvrdé mučení.\n\n\  → Bez vypsání CK nemůžete oběti řezat končetiny nebo udělat stálé následky (řezání je povolené).\n\n\ → Na povolení grossu se musíte ptát každého, kdo je přítomen v jeho potencionálním okolí (pokud by někdo gross nechtěl, gross se nesmí konat).\n\ → Pokud přijde někdo nový k RP akci - grossu - akce se musí pozastavit a všichni ho opět povolit.\n\n\
+                → Sexuální gross může být povolen, pokud všem osobám bylo OOC 15 a více let."
       },
       {
         title: "Trash/Fail RP",
-        desc: " Toto pravidlo udává jakýkoliv pokus o pokažení nebo trolení RP. Můžeme tu počítat i jednání/chování určitých frakcí.\n\n\  Pokud budete na toto pravidlo upozorněni, vždy se snažte zlepšit váš styl RP.\n\n\  Je přísně zakázané jen tak pozastavit RP prostřednictvím chatu.\n\n\  Hráč je povinný situaci doRPit."
+        desc: "= pravidlo, které udává jakýkoliv pokus o pokažení nebo trolení RP. \n\ → Může se do toho počítat i jednání/chování určitých frakcí (ne jen jednotlivců).\n\  → Pokud budete na toto pravidlo upozorněni, vždy se snažte zlepšit váš styl RP.\n\n\  → Je přísně zakázané jen tak pozastavit RP prostřednictvím chatu - hráč je povinnen situaci doRPit."
       }
     ]
   },
   {
     category: "Pravidla Frakcí",
-    desc: "napiš sem néco niga"
+    rules:[
+      {
+        title: "Základní frakční pravidla",
+        desc: "→ Nelze být ve více frakcích současně. \n\ → Frakci můžete opustit pouze, pokud máte důvod. \n\ → Maximální počet členů ve frakci není stanoven (počty členů ve frakcích se mohou ovšem lišit maximálně o 4 lidi).\n\n\ → Vybavení je předem dané a shválené A-Teamem.\n\n\ →  Frakce zabírají jednotlivé body, za které získávají PT (viz ''Ekonomika frakcí'').\n\ → Frakce mohou vytvářet menší checkpointy nebo bariéry (viz Custom RP pravidla)."
+      },
+      {
+        title: "Role ve frakcích",
+        desc: "→ Každá frakce má své role, které jsou určeny pro různé úkoly a odpovědnosti.\n\ → Role by měly být jasně definovány a každý člen by měl vědět, co se od něj očekává.\n\ → Vedení frakce by mělo pravidelně komunikovat s členy a zajišťovat, že všichni rozumí svým rolím a povinnostem.\n\ → Vedení frakce by mělo být příkladem pro ostatní členy a dodržovat pravidla serveru a frakce.\n\n\ → Medic: \n\ - může ošetřovat zraněné hráče a poskytovat jim první pomoc \n\ - může u sebe mít až 20 bandáží a 20 dressingů \n\ - ve frakci smí být maximálně 2 \n\n\ → LMG (light machine gunner): \n\ - může používat lehké kulomety a poskytovat palebnou podporu \n\ - ve frakci smí být maximálně 2"
+      }
+    ]
   },
   {
   category: "Ekonomika frakcí",
   rules: [
     {
       title: "Získávání PT",
-      desc: "Pro získání PT musíte mít ve chvíli započítání (každých 30 minut) mít zabrané určité místo na mapě.\n\n\
-            Za každé zabrané místo získáte 2 PT.\n\n\ Na mapě je 9 míst, které můžete zabrat."
+      desc: "Pro získání PT musíte mít ve chvíli započítání (každých 30 minut) zabrané určité místo na mapě.\n\
+            → Za každé zabrané místo získáte 2 PT.\n\ → Na mapě je celkem 9 míst, které můžete zabrat."
    },
    {
      title: "Shop",
@@ -330,7 +326,7 @@ const RULES_DATA = [
             CH-53D - 13pt\n\
             UH-60V - 13pt\n\n\
             Jiné:\n\
-            Airdropy - cena podle toho co chcete\n\
+            Airdropy - cena podle toho, co chcete\n\
             (Žádá se v ticketu obecný)"
    }
   ]
@@ -339,24 +335,24 @@ const RULES_DATA = [
     category: "Tresty a sankce",
     rules: [
       {
-        title: "📌 Postihy za porušení pravidel",
-        desc: "**🔸 Za porušení pravidla:**\n\
+        title: "Postihy za porušení pravidel",
+        desc: "**Za porušení pravidla:**\n\
               > 🟡 Warn 1\n\n\
-              **🔸 Za opakované porušování pravidel:**\n\
-              > 🟠 Warn 2, Warn 3 → poté BAN\n\n\
-              **🔸 Porušení frakčních pravidel:**\n\
-              > 🟥 Frakční warn 1, 2, 3 → ❌ Smazání frakce\n\n\
+              **Za opakované porušování pravidel:**\n\
+              > 🟠 Warn 2, Warn 3 → ban\n\n\
+              **Porušení frakčních pravidel:**\n\
+              > 🟥 Frakční warn 1, 2, 3 → smazání frakce\n\n\
               ---\n\n\
-              **⏱ Sankce podle warnu:**\n\
-              > ⚠️ Warn 1 → max. pauza **45 minut**\n\
-              > ⚠️ Warn 2 → max. pauza **3 hodiny**\n\
-              > ⚠️ Warn 3 → max. pauza **1 den**\n\
+              **Sankce podle warnu:**\n\
+              > ⚠️ Warn 1 → max. pauza 45 minut\n\
+              > ⚠️ Warn 2 → max. pauza 3 hodiny\n\
+              > ⚠️ Warn 3 → max. pauza 1 den\n\
               ---\n\n\
-              **🏳️ Frakční varování:**\n\
+              **Frakční varování:**\n\
               > 📌 Warn 1 → napomenutí majitele  \n\
               > 📌 Warn 2 → napomenutí majitele  \n\
-              > 📌 Warn 3 → napomenutí + ❌ Smazání frakce\n\n\
-              **‼️ Ve vážném případě může být frakce donucena opustit herní server nebo oblast na mapě členy A-Teamu.**"
+              > 📌 Warn 3 → napomenutí + Smazání frakce\n\n\
+              → Ve vážném případě může být frakce donucena opustit herní server nebo oblast na mapě členy A-Teamu."
       }
     ]
   },
