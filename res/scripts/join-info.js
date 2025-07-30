@@ -296,6 +296,10 @@ const RULES_DATA = [
     ]
   },
   {
+    category: "Pravidla Frakcí",
+    desc: "napiš sem néco niga"
+  },
+  {
   category: "Ekonomika frakcí",
   rules: [
     {
