@@ -238,8 +238,8 @@ const RULES_DATA = [
     rules: [
       {
         title: "RP Injuries",
-        desc: " Pokud je vaše postava zraněná, postřelená, do něčeho nabourala, atp., musíte to RPit s pomocí /me a popř. /do k ošetření zranění.\n\n\ Pokud jste v přestřelce, zasažení byste měli vyjádřit i zvukově např. výkřikem, jesliže se delší chvíli v okruhu 10m od vás nestřílí, můžete se začít ošetřovat s /me a /do.\n\n\
-         Jestliže se ocitnete v death screenu (animace, při které zemřete) a někdo vás vyléčí, musíte si lehnout na zem, dokud vás medic neošetří, také nesmíte střílet, plazit se nebo se jakýmkoliv jiným způsobem hýbat.\n\n\  Ošetřování RP Injuries musíte psát do herního chatu pomocí /me a /do."
+        desc: "= pokud je vaše postava zraněná, postřelená, do něčeho nabourala, atp., musíte to RPit s pomocí /me a popř. /do k ošetření zranění.\n\n\ → Pokud jste byli v přestřelce zasáhnuti, zasažení byste měli vyjádřit i zvukově (např. výkřikem), jesliže se delší chvíli v okruhu 10m od vás nestřílí, můžete se začít ošetřovat s /me a /do.\n\
+         → Jestliže se ocitnete v death screenu (animace, při které zemřete) a někdo vás vyléčí, musíte si lehnout na zem, dokud vás medic neošetří, také nesmíte střílet, plazit se nebo se jakýmkoliv jiným způsobem hýbat.\n\  → Ošetřování RP Injuries musíte psát do herního chatu pomocí /me a /do."
       },
       {
         title: "NVL | Not Valuing Life",
